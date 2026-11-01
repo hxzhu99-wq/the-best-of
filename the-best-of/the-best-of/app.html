@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Best Of</title>
+<meta name="description" content="Spin for the best startup ideas, side hustles, free courses and glow-up routines. 1,000+ lists. By LīMEN.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+</style>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@500;700&display=swap">
+<style>
+/* Layout: a phone-first app shell. Header, one scrolling screen, bottom tab bar; list detail slides in over it; typing happens in a bottom sheet. Single deliberate light look (Sourcely brand kit). */
+:root{
+  --paper:#F3F1EC; --card:#FFFFFF; --ink:#0B0B0F; --muted:#5E5C57; --rule:#D6D2C8;
+  --lemon:#FFE62E; --bubblegum:#FF7AA8; --tomato:#FF5A3C; --leaf:#6EE06B; --cobalt:#2B5CFF;
+  --display:'Bricolage Grotesque','Arial Black',Arial,sans-serif;
+  --body:'DM Sans','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;
+}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);-webkit-tap-highlight-color:transparent;overscroll-behavior:none}
+button{font:inherit;color:inherit;letter-spacing:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.shell{height:100%;max-width:480px;margin:0 auto;display:flex;flex-direction:column;position:relative;overflow:hidden;background:var(--paper)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px max(20px,env(safe-area-inset-right,0px)) 6px max(20px,env(safe-area-inset-left,0px))}
+.cap{font:500 11px/1.4 var(--body);letter-spacing:.08em;text-transform:uppercase}
+.cap .dim{color:var(--muted)}
+.screens{flex:1;position:relative;overflow:hidden}
+.screen{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:8px max(20px,env(safe-area-inset-right,0px)) 28px max(20px,env(safe-area-inset-left,0px));box-sizing:border-box}
+.title{font:800 34px/1.05 var(--display);letter-spacing:-.035em;margin:6px 0 16px}
+
+/* spin */
+.spin{display:flex;flex-direction:column;justify-content:center;gap:26px;min-height:100%}
+.line{margin:0;font-family:var(--display);font-weight:800;letter-spacing:-.035em;font-size:clamp(40px,11.5vw,54px);line-height:1.15;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.bob{display:inline-block;transform-origin:20% 100%;animation:jelly 3.4s ease-in-out infinite}
+.bob.b2{animation-delay:-1.7s}
+@keyframes jelly{0%,100%{transform:translateY(0) scale(1,1)}30%{transform:translateY(-.06em) scale(.98,1.04)}48%{transform:translateY(0) scale(1.04,.96)}62%{transform:scale(.99,1.01)}}
+.gum{position:relative;display:inline-block;border-radius:.42em;padding:0 .28em;transform-origin:50% 100%;cursor:pointer;transition:background-color .8s ease;
+  -webkit-backdrop-filter:blur(5px) saturate(1.7);backdrop-filter:blur(5px) saturate(1.7);
+  background-image:radial-gradient(ellipse 70% 60% at 62% 108%,rgba(255,255,255,.6),rgba(255,255,255,0) 70%),radial-gradient(ellipse 120% 95% at 50% 50%,rgba(255,255,255,0) 52%,rgba(11,11,15,.12) 100%);
+  box-shadow:inset 0 -.15em .26em rgba(11,11,15,.16),inset 0 .1em .22em rgba(255,255,255,.85),inset .07em 0 .16em rgba(255,255,255,.4),inset 0 0 0 .025em rgba(255,255,255,.6),0 .22em .36em rgba(11,11,15,.12)}
+.gum::before{content:"";position:absolute;left:.14em;top:.07em;width:48%;height:.24em;border-radius:999px;background:linear-gradient(rgba(255,255,255,.98),rgba(255,255,255,.08));pointer-events:none;z-index:2}
+.gum::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;animation:tw 2.6s ease-in-out infinite;
+  background-image:radial-gradient(circle at 88% 22%,#fff 0 .035em,rgba(255,255,255,0) .075em),radial-gradient(circle at 78% 32%,rgba(255,255,255,.9) 0 .018em,rgba(255,255,255,0) .04em),radial-gradient(circle at 16% 72%,rgba(255,255,255,.95) 0 .022em,rgba(255,255,255,0) .05em),radial-gradient(circle at 40% 86%,rgba(255,255,255,.85) 0 .016em,rgba(255,255,255,0) .035em),radial-gradient(circle at 64% 64%,rgba(255,255,255,.8) 0 .014em,rgba(255,255,255,0) .03em),radial-gradient(circle at 93% 80%,rgba(255,255,255,.85) 0 .018em,rgba(255,255,255,0) .04em)}
+@keyframes tw{0%,100%{opacity:.35}50%{opacity:1}}
+.gum.land{animation:land .75s cubic-bezier(.3,1.5,.5,1)}
+@keyframes land{0%{transform:scale(1.14,.84)}30%{transform:scale(.92,1.1)}55%{transform:scale(1.05,.96)}78%{transform:scale(.99,1.02)}100%{transform:scale(1,1)}}
+.win{display:block;height:1.15em;overflow:hidden;transition:width .55s cubic-bezier(.3,1.4,.5,1)}
+.strip{display:block}
+.cell{display:block;height:1.15em;line-height:1.15em;white-space:nowrap}
+.measure{position:absolute;visibility:hidden;white-space:pre;pointer-events:none;left:-9999px;top:0}
+.hint{margin:-10px 0 0;font:500 13px var(--body);color:var(--muted);display:flex;align-items:center;gap:6px}
+.shelf{display:flex;gap:12px;flex-wrap:wrap}
+.gummy{width:44px;height:44px;filter:drop-shadow(0 7px 8px rgba(11,11,15,.16));transform-origin:50% 100%;animation:jelly 3s ease-in-out infinite}
+.tw{animation:tw 2.2s ease-in-out infinite}
+.actions{display:flex;flex-direction:column;gap:12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:56px;border-radius:999px;font:700 17px var(--body);cursor:pointer;border:2px solid var(--ink);background:transparent;color:var(--ink);width:100%;box-sizing:border-box;transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.btn:active{transform:scale(.96)}
+.btn.ink{background:var(--ink);color:#fff;justify-content:space-between;padding:0 8px 0 24px}
+.btn.lemon{background:var(--lemon);border-color:var(--lemon)}
+.btn[disabled]{opacity:.55}
+.dot{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--lemon)}
+
+/* rows */
+.search{display:flex;align-items:center;gap:10px;min-height:48px;border-radius:999px;background:var(--card);padding:0 16px;margin-bottom:8px;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.search input{all:unset;flex:1;font:500 16px var(--body)}
+.group{font:500 11px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:22px 0 4px}
+.row{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid var(--rule)}
+.row:active{opacity:.6}
+.row .t{font:800 19px/1.3 var(--display);letter-spacing:-.02em}
+.chip{display:inline-block;border-radius:.4em;padding:0 .22em;box-shadow:inset 0 -.1em .16em rgba(11,11,15,.14),inset 0 .08em .14em rgba(255,255,255,.8)}
+.arr{flex:none;color:var(--muted);font-weight:700}
+.empty{border:2px dashed var(--rule);border-radius:24px;padding:28px 20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+
+/* detail */
+.detail{position:absolute;inset:0;background:var(--paper);z-index:20;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .38s cubic-bezier(.2,.9,.25,1)}
+.detail.open{transform:none}
+.dbar{display:flex;justify-content:space-between;align-items:center;padding:12px max(20px,env(safe-area-inset-right,0px)) 8px max(20px,env(safe-area-inset-left,0px))}
+.icon{all:unset;cursor:pointer;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 2px var(--ink);transition:transform .25s cubic-bezier(.3,1.6,.5,1),background-color .2s}
+.icon:active{transform:scale(.9)}
+.icon.on{background:var(--lemon)}
+.dscroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px max(20px,env(safe-area-inset-right,0px)) calc(32px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+.dtitle{margin:0;font:800 40px/1.15 var(--display);letter-spacing:-.035em;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.dtitle .gum{cursor:default}
+.who{margin:12px 0 20px;font-size:15px;line-height:1.5;color:var(--muted)}
+.cards{display:flex;flex-direction:column;gap:14px}
+.card{background:var(--card);border-radius:24px;padding:18px;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 0 rgba(11,11,15,.05),0 8px 20px rgba(11,11,15,.05)}
+.card .h{display:flex;align-items:baseline;gap:12px}
+.card .n{font:800 30px/1 var(--display);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.card h2{margin:0;font:800 21px/1.15 var(--display);letter-spacing:-.02em}
+.card p{margin:0;font-size:15px;line-height:1.5}
+.card .kv{border-top:1px solid #ECE9E1;padding-top:8px;display:flex;flex-direction:column;gap:2px}
+.lab{font:500 11px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card a{font:700 14px var(--body);color:var(--ink)}
+.note{font-size:13px;line-height:1.5;color:var(--muted);margin:18px 0 0}
+
+/* tab bar */
+.tabs{display:flex;border-top:1.5px solid var(--ink);background:var(--paper);padding:4px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));position:relative;z-index:10}
+.tab{all:unset;cursor:pointer;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:54px;font:700 10px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tab[aria-current="page"]{color:var(--ink)}
+.tab .badge{display:inline-block;min-width:16px;padding:0 4px;border-radius:999px;background:var(--bubblegum);color:var(--ink);font-size:10px;line-height:16px}
+
+/* sheet */
+.scrim{position:absolute;inset:0;background:rgba(11,11,15,.38);z-index:30;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.open{opacity:1;pointer-events:auto}
+.sheet{position:absolute;left:0;right:0;bottom:0;z-index:31;background:var(--paper);border-radius:28px 28px 0 0;padding:10px max(20px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));max-height:88%;overflow-y:auto;transform:translateY(105%);transition:transform .38s cubic-bezier(.2,.9,.25,1);display:flex;flex-direction:column;gap:14px;box-sizing:border-box}
+.sheet.open{transform:none}
+.grab{width:44px;height:5px;border-radius:999px;background:var(--rule);align-self:center}
+.field{display:flex;flex-direction:column;gap:6px}
+.field input{min-height:52px;border:2px solid var(--ink);border-radius:16px;padding:0 16px;font:700 18px var(--body);background:var(--card);color:var(--ink);width:100%;box-sizing:border-box}
+.wah{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.wah h2{margin:0;font:800 36px/1 var(--display);letter-spacing:-.035em}
+.tag{font:700 11px var(--body);letter-spacing:.08em;text-transform:uppercase;background:var(--bubblegum);border-radius:999px;padding:5px 10px}
+.foot{text-align:center;font:500 10px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:28px}
+
+@media (prefers-reduced-motion:reduce){.bob,.gummy,.gum::after,.tw,.gum.land{animation:none}.win,.detail,.sheet{transition:none}}
+</style>
+</head>
+<body>
+<div class="shell" id="shell">
+  <header class="top">
+    <div class="cap"><strong>The Best Of.</strong><br><span class="dim">By LīMEN</span></div>
+    <div class="cap" style="text-align:right"><span class="dim" id="count"></span></div>
+  </header>
+
+  <div class="screens">
+    <section class="screen" id="s-spin" aria-label="Spin">
+      <div class="spin">
+        <h1 class="line">
+          <span>The best of</span>
+          <span class="bob"><button type="button" class="gum" id="gumA" aria-label="Change the first word"><span class="win" id="winA"><span class="strip" id="stripA"></span></span></button></span>
+          <span class="bob b2"><button type="button" class="gum" id="gumB" aria-label="Change the second word"><span class="win" id="winB"><span class="strip" id="stripB"></span></span></button></span>
+        </h1>
+        <p class="hint"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>Tap a word to type your own</p>
+        <div class="shelf" id="shelf" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn ink" id="read">Read the list <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0B0F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg></span></button>
+          <button type="button" class="btn" id="spin">↻ Spin again</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="s-saved" aria-label="Saved" hidden>
+      <h1 class="title">Saved</h1>
+      <div id="saved-list"></div>
+      <div class="empty" id="saved-empty">
+        <strong style="font-size:17px">Nothing saved yet</strong>
+        <span style="font-size:15px;line-height:1.5;color:var(--muted)">Open any list and tap the bookmark to keep it here.</span>
+        <button type="button" class="btn lemon" id="go-spin" style="width:auto;min-height:46px;padding:0 22px">Go spin</button>
+      </div>
+    </section>
+  </div>
+
+  <nav class="tabs" aria-label="Tabs">
+    <button type="button" class="tab" data-tab="spin" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>Spin</button>
+    <button type="button" class="tab" data-tab="saved"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"></path></svg><span>Saved <span class="badge" id="badge" hidden></span></span></button>
+  </nav>
+
+  <section class="detail" id="detail" aria-label="List" aria-hidden="true">
+    <div class="dbar">
+      <button type="button" class="icon" id="back" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0B0F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="20" y1="12" x2="4" y2="12"></line><polyline points="11 5 4 12 11 19"></polyline></svg></button>
+      <button type="button" class="icon" id="save" aria-label="Save this list" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B0B0F" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path id="save-path" d="M6 3h12v18l-6-4-6 4z"></path></svg></button>
+    </div>
+    <div class="dscroll" id="dscroll">
+      <h1 class="dtitle" id="dtitle"></h1>
+      <p class="who" id="dwho"></p>
+      <div class="cards" id="dcards"></div>
+      <p class="note" id="dnote"></p>
+      <div class="actions" style="margin-top:22px"><button type="button" class="btn lemon" id="dspin">↻ Spin again</button></div>
+      <p class="foot">© 2026 The Best Of · By LīMEN</p>
+    </div>
+  </section>
+
+  <div class="scrim" id="scrim"></div>
+  <section class="sheet" id="sheet" aria-label="Type your own" aria-hidden="true">
+    <div class="grab"></div>
+    <div id="sheet-form">
+      <h2 style="margin:0 0 14px;font:800 30px/1.05 var(--display);letter-spacing:-.035em">Type your own</h2>
+      <form id="form" style="display:flex;flex-direction:column;gap:12px">
+        <label class="field"><span class="lab">The best of…</span><input id="ia" list="adj-options" autocomplete="off" spellcheck="false" placeholder="Free"></label>
+        <label class="field"><span class="lab">…what?</span><input id="ib" list="kind-options" autocomplete="off" spellcheck="false" placeholder="Coding Courses"></label>
+        <button type="submit" class="btn ink">Find it <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0B0F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg></span></button>
+        <button type="button" class="btn" id="cancel">Cancel</button>
+      </form>
+    </div>
+    <div id="sheet-miss" hidden>
+      <div class="wah"><h2 id="wah-head">Wah wah.</h2><span class="tag">Niche taste</span></div>
+      <p id="wah-text" style="margin:10px 0 6px;font-size:15px;line-height:1.5"></p>
+      <div id="recs"></div>
+      <div class="actions" style="margin-top:14px"><button type="button" class="btn" id="retype">Type something else</button></div>
+    </div>
+  </section>
+</div>
+<span class="line measure" id="measure" aria-hidden="true"></span>
+<datalist id="adj-options"></datalist>
+<datalist id="kind-options"></datalist>
+
+<script>
+(function(){
+  // ---------- combo engine data ----------
+  // Describing words → the trait a pick must have. "cheap" also accepts free picks.
+  var WORDS = [
+    ["Free","free"],["Budget","cheap"],["Cheap","cheap"],["Low-Cost","cheap"],
+    ["Easy","easy"],["Beginner","easy"],["Simple","easy"],["Starter","easy"],
+    ["Fast","fast"],["Quick","fast"],["Online","online"],["Remote","online"],
+    ["Creative","creative"],["Artsy","creative"],["Student","student"],
+    ["Underrated","underrated"],["Hidden-Gem","underrated"],["Popular","popular"],["Classic","popular"],
+    ["Sustainable","eco"],["Eco","eco"],["Solo","solo"],["Introvert-Friendly","solo"],
+    ["Social","social"],["AI-Powered","ai"],["Mobile","mobile"],["Phone-Only","mobile"],
+    ["Weekend","weekend"],["Daily","daily"],["Calming","calm"],["Cozy","calm"],
+    ["Pro-Level","pro"],["Advanced","pro"],["Money-Making","earn"],["Lucrative","earn"],
+    ["Fun","fun"],["Playful","fun"],["Healthy","health"],["Proven","proven"],["Effective","proven"],["Smart","proven"]
+  ];
+  function T(kind, who, lab, kw, picks, note){ return { kind:kind, who:who, lab:lab, kw:kw, note:note || "", picks:picks.map(function(p){ return { name:p[0], url:p[1], what:p[2], best:p[3], tags:p[4].split(" ") }; }) }; }
+  var TOPICS = [
+    // ===== ideas =====
+    T("Startup Ideas","people who want to launch in weeks, not months","First step","startup startups business idea ideas launch company",[
+      ["Social media for local shops","","Run Instagram and TikTok for cafés, salons and gyms that don't have time to post.","Offer one shop a free month for a testimonial.","cheap easy fast online social earn creative proven"],
+      ["Digital templates","","Sell Notion, Canva or spreadsheet templates that save people time.","List one template on Gumroad or Etsy.","free cheap easy online solo creative earn weekend student"],
+      ["CV and LinkedIn makeovers","","Rewrite résumés and profiles for students and job hunters.","Fix three friends' CVs and post the before-and-afters.","free cheap easy fast online solo student earn weekend"],
+      ["Print-on-demand merch","","Sell your designs on shirts and totes without holding stock.","Make five designs and connect Printful to Etsy.","cheap online creative solo fun weekend popular"],
+      ["Neighborhood errand service","","Grocery runs, pet care and small jobs for busy neighbors.","Post in your local group chat this week.","free cheap easy fast social weekend student earn"],
+      ["AI content studio","","Use AI to draft posts for small brands, then edit for quality.","Offer a week of posts to one local business.","cheap fast online ai solo earn pro"],
+      ["Automation setup service","","Connect tools with Zapier or Make so small teams save hours.","Automate one boring task in your own life first.","cheap online ai pro solo earn underrated"],
+      ["Niche newsletter","","Become the go-to source for one specific topic.","Pick a topic you'd read anyway and send issue one.","free cheap easy online solo creative underrated daily"],
+      ["Upcycled clothing brand","","Rework thrifted pieces into one-off designs.","Upcycle three pieces and list them on Depop.","cheap creative eco solo fun weekend underrated"],
+      ["Refill shop","","Sell cleaning or beauty products in refillable containers.","Check your local rules before selling anything you mix.","eco social health underrated"],
+      ["Mobile car cleaning","","Interior and exterior cleans at people's homes.","Practice on family cars, then post before-and-afters.","cheap easy weekend earn fast student"],
+      ["Mini online course","","Teach one specific skill people struggle with.","Pre-sell it to ten people before recording.","cheap online solo earn proven creative"]]),
+    T("Side Hustles","anyone with evenings and weekends to spare","Good if","side hustle hustles extra income money earn freelance part time gig",[
+      ["Short-form video editing","","Creators and brands constantly need TikToks and Reels edited.","You already edit videos for fun","online creative earn solo mobile popular remote"],
+      ["UGC creator","","Brands pay creators to film product videos for ads.","You're comfortable on camera","cheap mobile creative earn fun social popular"],
+      ["Websites for small businesses","","Local businesses still need simple, good-looking sites.","You like tools like Framer or Squarespace","online creative earn pro solo"],
+      ["Freelance copywriting","","Write product pages, emails and captions for brands.","You enjoy writing","free online solo earn creative proven"],
+      ["Online tutoring","","Teach a subject, language or instrument over video.","You're strong in one subject","free online student earn proven social"],
+      ["Vintage reselling","","Buy underpriced thrift finds and resell online.","You already love thrifting","cheap eco weekend fun mobile underrated earn"],
+      ["Pet sitting","","Trust and reliability matter more than gear.","You love animals","free easy weekend social student earn calm"],
+      ["Virtual assistant","","Handle inboxes, calendars and admin for busy founders.","You're organized","free easy online solo earn remote"],
+      ["Event photography","","Birthdays and small events need someone who can shoot well.","You have a decent camera or phone","creative weekend social earn fun"],
+      ["Stock photos and templates","","Upload photos or design templates that earn every time they sell.","You like making things once","online creative solo underrated calm"],
+      ["Babysitting and nannying","","Families always need trusted sitters.","You're patient and reliable","free easy weekend student social earn"],
+      ["Selling crafts at markets","","Local markets are great for testing handmade products.","You make things with your hands","creative weekend social fun calm"]]),
+    T("Online Businesses","people who want a business they can run from a laptop","First step","online internet digital business businesses laptop remote ecommerce",[
+      ["Etsy digital shop","","Printables, wall art and planners with no shipping.","Research what sells, then make a better version.","cheap easy online solo creative calm popular"],
+      ["Faceless YouTube channel","","Explainers or tutorials without showing your face.","Script and post three videos before judging.","free online solo creative introvert underrated"],
+      ["Newsletter with sponsors","","Grow a list, then sell sponsorships.","Send your first issue to 20 friends.","free online solo daily earn proven"],
+      ["Freelance on Fiverr or Upwork","","Sell one skill while building a reputation.","Create one tightly focused gig.","free easy online solo earn fast popular"],
+      ["Affiliate review site","","Review products in a niche and earn commissions.","Write three honest, detailed reviews.","cheap online solo earn underrated"],
+      ["Print-on-demand store","","Sell your designs on products made when ordered.","Connect Printful or Printify to a store.","cheap online creative solo popular"],
+      ["Paid community","","Charge for access to a focused group.","Start free on Discord, then add paid perks.","online social earn pro"],
+      ["Notion template shop","","Sell systems people can duplicate.","Package the setup you already use.","free cheap easy online solo student creative"],
+      ["Online coaching","","Help people reach one specific goal over video.","Coach three people free for testimonials.","online social earn proven"],
+      ["AI prompt and workflow packs","","Sell ready-made AI workflows for one niche.","Interview someone about their worst weekly task.","cheap fast online ai solo"],
+      ["Dropshipping store","","Sell products shipped straight from suppliers.","Research quality and shipping times carefully first.","cheap online popular pro"]]),
+    T("Hobby Businesses","makers who want to turn a hobby into income","First step","hobby hobbies craft crafts handmade maker make creative art business",[
+      ["Candles","","Scents, vessels and branding make each line different.","Gift a test batch for honest feedback.","creative weekend fun calm popular"],
+      ["Stickers and prints","","Cheap to produce and easy to ship.","Order a small batch of your best three designs.","cheap easy creative fun student popular"],
+      ["Custom pet portraits","","People love art of their pets as gifts.","Draw two friends' pets and post the results.","cheap creative solo fun earn"],
+      ["Handmade jewelry","","Beads, wire or clay pieces with a clear style.","Make a small first collection in one style.","cheap creative weekend fun popular"],
+      ["Crochet and knitwear","","Trendy pieces and plushies sell well online.","Film your process; making-of videos sell.","cheap creative calm solo underrated"],
+      ["Ceramics","","Mugs, planters and trinket dishes with your style.","Take a class and sell at a local market.","creative calm weekend pro"],
+      ["Plant propagation","","Grow cuttings from your own plants and sell them.","Start with easy plants like pothos.","free cheap easy eco calm weekend"],
+      ["Baked goods","","Cookies, cakes and treats for events.","Check local food rules before selling.","creative social weekend fun"],
+      ["Furniture flipping","","Restore secondhand furniture and resell it.","Start with one free or cheap piece.","cheap eco weekend creative earn"],
+      ["Photography prints","","Sell prints of your best photos.","Print five favorites and test at a market.","creative solo weekend calm"],
+      ["Embroidery","","Custom patches, hoops and clothing details.","Offer custom names on caps or totes.","cheap creative calm solo underrated"]]),
+    T("Service Businesses","people who'd rather sell a skill than a product","First step","service services business local clients customers skill",[
+      ["Social media manager","","Run accounts for local businesses.","Pitch one café with three sample posts.","cheap easy online social earn popular"],
+      ["Tutoring","","Help younger students in your strongest subject.","Tell parent groups you're available.","free easy student social earn proven"],
+      ["Moving help","","Moving weeks are hectic; extra hands help.","Team up with a friend and post an offer.","free easy fast weekend student earn"],
+      ["Tech help for older adults","","Phone and app setup for people who find it confusing.","Offer help through a community center.","free easy social student underrated"],
+      ["Personal organizing","","Declutter closets, garages and offices.","Organize a friend's space for photos.","cheap easy calm weekend underrated"],
+      ["Bike repair","","Fix flats, brakes and gears for neighbors.","Learn the basics from free videos.","cheap eco weekend underrated"],
+      ["Clothing alterations","","Hemming and fixes keep clothes in use.","Offer repairs to friends first.","cheap eco creative calm solo"],
+      ["Language exchange tutoring","","Teach your native language online.","Set up a profile on a tutoring site.","free online social earn"],
+      ["Video editing for creators","","Edit long videos into short clips.","Edit one creator's video for free.","online creative solo earn pro"],
+      ["Garden care","","Weeding, planting and lawn care.","Start with neighbors' yards.","cheap eco weekend health calm"],
+      ["Event setup and decor","","Help with birthdays, showers and small parties.","Decorate a friend's party and photograph it.","creative social weekend fun"]]),
+
+    // ===== learning =====
+    T("Online Courses","anyone learning new skills from scratch","Best for","course courses learn learning class classes education school online",[
+      ["Startup School","https://www.startupschool.org","Free startup course from Y Combinator.","Tech and app founders","free online proven pro popular"],
+      ["HubSpot Academy","https://academy.hubspot.com","Free courses on marketing, sales and social.","Marketing basics","free easy online proven"],
+      ["Grow with Google","https://grow.google","Free training on digital skills.","Getting found online","free easy online student"],
+      ["CS50","https://cs50.harvard.edu","Harvard's famous intro to computer science.","Strong fundamentals","free online student proven popular pro"],
+      ["Coursera","https://www.coursera.org","University courses, many free to audit.","Going deep on one topic","free online student popular proven"],
+      ["Khan Academy","https://www.khanacademy.org","Free lessons from math to economics.","Filling in the basics","free easy online student mobile popular"],
+      ["edX","https://www.edx.org","Courses from universities, many free to audit.","University-level learning","free online student pro"],
+      ["MIT OpenCourseWare","https://ocw.mit.edu","Free materials from real MIT courses.","Self-paced deep dives","free online pro underrated solo"],
+      ["Duolingo","https://www.duolingo.com","Bite-size, game-like language lessons.","A daily habit","free easy mobile daily fun popular"],
+      ["Skillshare","https://www.skillshare.com","Creative classes in design, video and more.","Creative skills","online creative easy"],
+      ["LinkedIn Learning","https://www.linkedin.com/learning/","Business and software courses.","Workplace skills","online pro"]]),
+    T("Coding Courses","beginners who want to build their own apps and sites","Best for","code coding programming developer web app apps javascript python",[
+      ["freeCodeCamp","https://www.freecodecamp.org","Free, project-based web development curriculum.","Learning by building","free online student proven popular"],
+      ["The Odin Project","https://www.theodinproject.com","Free full-stack web development path.","Becoming job-ready","free online pro solo underrated"],
+      ["CS50","https://cs50.harvard.edu","Harvard's intro to computer science.","Strong fundamentals","free online student proven pro popular"],
+      ["Khan Academy Computing","https://www.khanacademy.org/computing","Gentle, interactive coding lessons.","Total beginners","free easy online student"],
+      ["MDN Learn","https://developer.mozilla.org/en-US/docs/Learn","Mozilla's guide to HTML, CSS and JavaScript.","Web basics","free online proven pro"],
+      ["Scrimba","https://scrimba.com","Interactive screencasts you can edit.","Hands-on learners","online easy fun"],
+      ["Codecademy","https://www.codecademy.com","Interactive lessons in the browser, with a free tier.","Quick starts","free easy online fast popular"],
+      ["Exercism","https://exercism.org","Free coding exercises with mentor feedback.","Practice","free online social underrated pro"],
+      ["Mimo","https://mimo.org","Learn to code in short sessions on your phone.","Learning on the go","easy mobile daily fun"],
+      ["Grasshopper","https://grasshopper.app","Free beginner coding games.","Absolute beginners","free easy mobile fun"]]),
+    T("Marketing Courses","founders who need customers, not just a product","Best for","marketing market ads advertising seo growth customers brand social media",[
+      ["HubSpot Academy","https://academy.hubspot.com","Inbound, email and content courses with certificates.","Fundamentals","free easy online proven popular"],
+      ["Google Skillshop","https://skillshop.withgoogle.com","Official training for Google Ads and Analytics.","Running ads","free online pro proven"],
+      ["Semrush Academy","https://www.semrush.com/academy/","Free SEO and content marketing courses.","Getting found on Google","free online pro"],
+      ["Meta Blueprint","https://www.facebook.com/business/learn","Official training for Instagram and Facebook ads.","Social ads","free online social"],
+      ["Ahrefs Academy","https://ahrefs.com/academy","Free SEO courses and blog guides.","SEO deep dives","free online pro underrated"],
+      ["TikTok Academy","https://ads.tiktok.com/business/en/academy","Learn TikTok ads and content basics.","TikTok marketing","free online social mobile"],
+      ["Canva Design School","https://www.canva.com/designschool/","Short lessons on design for marketing.","Good-looking posts","free easy creative online"],
+      ["Coursera Marketing","https://www.coursera.org/browse/business/marketing","University marketing courses, many free to audit.","Structured learning","free online student"]]),
+    T("Money Lessons","anyone who wants to understand money before making it","Best for","money finance financial budget budgeting invest investing saving",[
+      ["Khan Academy Personal Finance","https://www.khanacademy.org/college-careers-more/personal-finance","Short lessons on budgeting, credit and taxes.","The basics","free easy online student"],
+      ["Investopedia","https://www.investopedia.com","Plain-language explanations of money terms.","Looking things up","free online proven popular"],
+      ["r/personalfinance wiki","https://www.reddit.com/r/personalfinance/wiki/index","Community guides to budgeting and saving.","Step-by-step plans","free online social"],
+      ["The Psychology of Money","","Morgan Housel on how behavior shapes wealth.","Thinking long term","calm popular proven"],
+      ["I Will Teach You To Be Rich","","Ramit Sethi's practical money system.","Automating finances","proven popular"],
+      ["Coursera Financial Markets","https://www.coursera.org/learn/financial-markets-global","Yale's course on how markets work, free to audit.","Going deeper","free online pro"],
+      ["Bogleheads wiki","https://www.bogleheads.org/wiki/Main_Page","Simple, long-term investing guides.","Low-stress investing","free online calm underrated"]], "Educational only, not financial advice."),
+    T("Language Apps","anyone learning a language for travel, work or fun","Best for","language languages learn speak english spanish italian french app apps",[
+      ["Duolingo","https://www.duolingo.com","Game-like daily lessons in dozens of languages.","A daily habit","free easy mobile daily fun popular"],
+      ["Language Transfer","https://www.languagetransfer.org","Free audio courses that teach you to think in the language.","Grammar that clicks","free easy underrated calm"],
+      ["Tandem","https://www.tandem.net","Chat with native speakers learning your language.","Real conversation","free mobile social"],
+      ["HelloTalk","https://www.hellotalk.com","Language exchange with built-in corrections.","Texting practice","free mobile social fun"],
+      ["Anki","https://apps.ankiweb.net","Flashcards with spaced repetition.","Vocabulary that sticks","free proven solo pro"],
+      ["Babbel","https://www.babbel.com","Structured lessons built around real conversations.","Steady progress","easy mobile proven"],
+      ["italki","https://www.italki.com","Book lessons with tutors from around the world.","Speaking practice","online social proven"],
+      ["Busuu","https://www.busuu.com","Lessons plus feedback from native speakers.","Community feedback","mobile social"]]),
+    T("YouTube Channels","people who learn best by watching","Best for","youtube channel channels video videos watch creators",[
+      ["Y Combinator","https://www.youtube.com/@ycombinator","Talks and advice from the startup accelerator.","Startup fundamentals","free online proven pro"],
+      ["Starter Story","https://www.youtube.com/@starterstory","Founders break down how their businesses make money.","Real ideas","free online earn fun"],
+      ["Ali Abdaal","https://www.youtube.com/@aliabdaal","Productivity and online business.","Creators","free online popular student"],
+      ["Colin and Samir","https://www.youtube.com/@ColinandSamir","Interviews about the creator economy.","Aspiring creators","free online creative"],
+      ["Thomas Frank","https://www.youtube.com/@Thomasfrank","Study tips, productivity and Notion setups.","Students","free easy online student"],
+      ["Yoga With Adriene","https://www.youtube.com/@yogawithadriene","Free yoga for every level.","Calm movement","free easy calm health daily"],
+      ["Crash Course","https://www.youtube.com/@crashcourse","Fast, fun overviews of school subjects.","Quick learning","free fast fun student popular"],
+      ["Kurzgesagt","https://www.youtube.com/@kurzgesagt","Animated science explainers.","Curious minds","free fun popular creative"]]),
+    T("Podcasts","people who want stories on the commute","Best for","podcast podcasts listen audio stories founders",[
+      ["How I Built This","https://www.npr.org/podcasts/510313/how-i-built-this","Founders tell how their companies began.","Origin stories","free popular proven calm"],
+      ["My First Million","https://www.mfmpod.com","Hosts riff on business ideas and trends.","Idea generation","free fun earn"],
+      ["Founders","https://www.founderspodcast.com","Each episode breaks down a founder biography.","Learning from history","free pro underrated"],
+      ["Acquired","https://www.acquired.fm","Deep dives into how big companies were built.","Long weekend listens","free pro weekend"],
+      ["The Diary of a CEO","","Long interviews about business and life.","Big-picture thinking","free popular"],
+      ["Huberman Lab","","Science-based tools for health and focus.","Health nerds","free health pro"],
+      ["Hidden Brain","","Psychology stories about why we do what we do.","Understanding people","free calm underrated"]]),
+    T("Startup Books","founders who'd rather learn from a book","Why read it","book books startup startups business founder entrepreneur reading",[
+      ["The Mom Test","https://www.momtestbook.com","How to ask customers questions that get honest answers.","Testing an idea","fast easy proven underrated"],
+      ["The $100 Startup","","Businesses started with very little money.","Bootstrappers","cheap easy solo"],
+      ["Zero to One","","Peter Thiel on building something new.","Big-picture thinking","popular pro"],
+      ["Company of One","","Paul Jarvis on staying small on purpose.","Solo founders","solo calm underrated"],
+      ["Shoe Dog","","Phil Knight's memoir of starting Nike.","Motivation","popular fun"],
+      ["The Lean Startup","","Eric Ries on testing ideas with small experiments.","Learning fast","popular proven fast"],
+      ["Rework","","Short, blunt essays on running a business.","Quick reads","fast easy solo"],
+      ["Show Your Work!","https://austinkleon.com/show-your-work/","Austin Kleon on sharing your process.","Creators","fast easy creative"]]),
+    T("Self-Help Books","anyone ready to work on themselves","Why read it","book books self help development growth mindset habits reading",[
+      ["Atomic Habits","","James Clear on small habits that compound.","Changing routines","easy popular proven daily"],
+      ["Deep Work","","Cal Newport on focus in a distracted world.","Getting serious work done","proven pro"],
+      ["Mindset","","Carol Dweck on fixed versus growth mindsets.","Handling failure","proven student"],
+      ["The Psychology of Money","","How behavior shapes wealth.","Thinking about money","calm popular"],
+      ["Four Thousand Weeks","","Oliver Burkeman on time and what matters.","Letting go of hustle","calm underrated"],
+      ["Steal Like an Artist","","Austin Kleon on creativity.","Creative blocks","fast easy creative fun"],
+      ["The Daily Stoic","","A short Stoic reflection for every day.","A daily habit","daily calm easy"],
+      ["Quiet","","Susan Cain on the power of introverts.","Introverts","solo calm popular"]]),
+
+    // ===== self-development =====
+    T("Morning Routines","anyone who wants calmer, more focused mornings","Try","morning mornings routine routines wake habits productive",[
+      ["Same wake-up time","","Consistency makes waking easier over the week.","Pick a time you can keep on weekends.","free easy daily proven health"],
+      ["Daylight early","","Outside light soon after waking helps you feel alert.","Drink your coffee by a window.","free easy daily health calm"],
+      ["Phone-free first 30 minutes","","Skipping your feed keeps your head clear.","Charge your phone outside the bedroom.","free easy daily calm"],
+      ["Move for five minutes","","Stretching or a walk wakes your body up.","Keep it small enough to do daily.","free easy fast daily health"],
+      ["Pick three priorities","","Decide what matters before the day decides for you.","Write them on paper.","free fast daily proven"],
+      ["Make your bed","","A tiny win to start the day.","Do it before leaving the room.","free easy fast daily"],
+      ["Journal one page","","Clear your head before work.","Write without editing.","free calm daily creative solo"],
+      ["Protein breakfast","","Keeps energy steadier than sugar.","Prep it the night before.","daily health"],
+      ["Cold-ish shower finish","","A short cool rinse can feel energizing.","Try 15 seconds at the end.","free fast daily fun"],
+      ["Read ten pages","","Small daily reading adds up fast.","Keep a book by your bed.","free calm daily solo"]]),
+    T("Study Techniques","students and self-learners who want to remember more","Try","study studying exam exams memory remember learn school revision",[
+      ["Active recall","","Test yourself instead of rereading.","Close the book and write what you remember.","free easy proven student daily solo"],
+      ["Spaced repetition","","Review just before you'd forget.","Use a flashcard app like Anki.","free proven student daily mobile"],
+      ["Pomodoro technique","","Short focused sessions with breaks.","Try 25 minutes on, 5 off.","free easy fast proven student daily"],
+      ["Feynman technique","","Explain it simply, as if to a kid.","Where you get stuck is what to study.","free easy proven student creative"],
+      ["Interleaving","","Mix related topics in one session.","Alternate problem types when practicing.","free proven student pro"],
+      ["Study groups","","Explaining to others locks it in.","Meet weekly with two classmates.","free social student fun"],
+      ["Mind maps","","Draw how ideas connect.","Start with the topic in the center.","free creative student fun"],
+      ["Practice tests","","Simulate the real exam.","Time yourself with past papers.","free proven student"],
+      ["Sleep before exams","","Sleep helps lock in memories.","Stop cramming and go to bed.","free health proven student calm"],
+      ["Teach-back videos","","Record yourself explaining a topic.","Film a two-minute phone explainer.","free mobile creative student"]]),
+    T("Productivity Hacks","anyone with big plans and a messy brain","Try","productivity productive focus time management tasks hacks",[
+      ["Time blocking","","Give every task a slot on your calendar.","Block tomorrow's top task tonight.","free proven daily pro"],
+      ["Two-minute rule","","If it takes under two minutes, do it now.","Clear small tasks immediately.","free easy fast daily"],
+      ["Eat the frog","","Do the hardest task first.","Start with it before email.","free easy proven daily"],
+      ["Batching","","Group similar tasks together.","Answer messages twice a day.","free proven solo"],
+      ["Body doubling","","Work alongside someone, even on video.","Join a virtual coworking session.","free online social underrated"],
+      ["Done list","","Write what you finished, not just to-dos.","Review it every evening.","free easy calm daily"],
+      ["Phone in another room","","Out of sight, out of mind.","Try it for one work block.","free easy fast proven"],
+      ["Weekly review","","Plan the week before it starts.","Take 20 minutes on Sunday.","free calm weekend proven"],
+      ["AI to-do triage","","Paste your task list into an AI assistant to sort and split it.","Ask it to rank by impact.","free fast ai online"],
+      ["Focus music","","Instrumental music helps some people focus.","Try a lo-fi playlist.","free easy calm fun"]]),
+    T("Skin Routines","anyone who wants calmer, healthier-looking skin","How to do it","skin skincare glow glowing face routine beauty acne",[
+      ["Gentle cleanser","","Skip harsh scrubs that strip your skin.","Cleanse at night; water may do in the morning.","cheap easy daily health"],
+      ["Moisturizer","","Even oily skin does better hydrated.","Pick fragrance-free for sensitive skin.","cheap easy daily health"],
+      ["Daily sunscreen","","Broad-spectrum SPF 30+ is the step dermatologists stress most.","Apply every morning, even when cloudy.","cheap easy daily proven health popular"],
+      ["One active at a time","","Vitamin C or retinoids help, but too many at once irritate.","Patch test and add slowly.","proven pro health"],
+      ["Hands off","","Picking spots makes marks last longer.","Use a pimple patch instead.","free easy health calm"],
+      ["Clean pillowcases","","Less oil and bacteria against your face.","Swap them twice a week.","free cheap easy health"],
+      ["Sleep","","Rest shows on your skin.","Aim for consistent bedtimes.","free health calm daily"],
+      ["Simple routine","","Three good products beat ten random ones.","Cleanser, moisturizer, sunscreen.","cheap easy fast proven daily"]], "General skincare tips, not medical advice. See a dermatologist for acne, rashes or anything that worries you."),
+    T("Healthy Habits","anyone building a stronger daily foundation","Try","healthy health habit habits wellness wellbeing sleep lifestyle",[
+      ["Consistent sleep","","Regular bed and wake times make everything easier.","Set a bedtime alarm.","free easy daily health proven calm"],
+      ["Daily walks","","Easy movement helps body and mood.","Take calls on foot.","free easy daily health calm social"],
+      ["Water within reach","","Easier to drink enough when it's nearby.","Keep a bottle on your desk.","free cheap easy daily health"],
+      ["Less doomscrolling","","Endless feeds eat time and attention.","Set app time limits.","free easy mobile health calm"],
+      ["Evening journaling","","Writing helps you notice patterns.","Note one win and one lesson.","free calm daily solo creative"],
+      ["Veggies first","","Start meals with vegetables.","Add one to every lunch.","cheap easy daily health"],
+      ["Stretch breaks","","Break up long sitting.","Stand up every hour.","free easy fast daily health"],
+      ["Screen-free bedtime","","Wind down without bright screens.","Read paper before sleep.","free calm daily health"],
+      ["Weekend outdoors","","Nature time resets your head.","Plan one outdoor thing each weekend.","free weekend health calm fun social"]], "General wellness tips, not medical advice."),
+    T("Money Habits","young founders keeping their finances healthy","Try","money finance finances saving savings budget budgeting habit habits debt",[
+      ["Pay yourself first","","Move savings out the moment income arrives.","Set an automatic transfer on payday.","free easy proven daily"],
+      ["Emergency fund","","A cushion keeps one bad month from becoming a crisis.","Start with a small, reachable goal.","free proven calm"],
+      ["Track spending","","You can't change what you don't measure.","Review a month of statements.","free easy mobile"],
+      ["Separate business money","","Mixing money makes taxes messy.","Open a separate account once you earn.","free proven pro"],
+      ["Avoid high-interest debt","","Card interest wipes out side-hustle profit.","Pay cards in full each month.","free proven"],
+      ["48-hour rule","","Wait two days before non-essential buys.","Add items to a wishlist first.","free easy fast calm"],
+      ["Cancel unused subscriptions","","Small charges add up.","Review subscriptions this week.","free fast easy"],
+      ["No-spend weekends","","Free fun saves money and builds creativity.","Plan a free weekend activity.","free weekend fun social"],
+      ["Round-up savings","","Apps can round purchases up into savings.","Turn it on in your banking app.","easy mobile daily underrated"]], "Educational only, not financial advice."),
+    T("Networking Tips","anyone shy about meeting people who could help","Try","network networking people connections mentor meet events confidence linkedin",[
+      ["Be specific when reaching out","","Say what you liked and make one clear ask.","Send one thoughtful message this week.","free online proven solo"],
+      ["Small events","","Small meetups make real conversation easier.","Find one local event on Meetup.","free social weekend introvert"],
+      ["Share your work publicly","","Posting what you build brings people to you.","Post one project update.","free online creative solo"],
+      ["Help first","","Offering something useful builds trust.","Share a resource without asking anything.","free easy social proven"],
+      ["Follow up","","Most connections fade without a follow-up.","Message people within two days.","free easy fast proven"],
+      ["Coffee chats","","Short, low-pressure one-on-ones.","Ask for 15 minutes, not an hour.","cheap social easy"],
+      ["Join a community","","Online groups make networking constant.","Comment helpfully for a week before posting.","free online social solo"],
+      ["Volunteer at events","","Organizers meet everyone.","Offer to help at a local meetup.","free social weekend fun"],
+      ["Comment before you DM","","Thoughtful comments make DMs warmer.","Comment on three posts this week.","free easy online mobile"]]),
+    T("Confidence Boosters","anyone who wants to feel braver","Try","confidence confident brave fear courage self esteem anxiety",[
+      ["Tiny daily dares","","Small brave acts build courage.","Ask one question in a meeting.","free easy daily fast"],
+      ["Wins list","","Write down what went well.","Add three wins each night.","free easy calm daily solo"],
+      ["Power playlist","","Music can lift your mood before big moments.","Make a five-song hype playlist.","free fun fast mobile"],
+      ["Practice out loud","","Rehearse pitches and hard talks.","Record yourself once and replay.","free mobile solo proven"],
+      ["Dress for the day","","Getting ready can shift your mindset.","Pick tomorrow's outfit tonight.","free easy daily"],
+      ["Talk to yourself like a friend","","Swap harsh self-talk for kinder words.","Notice one harsh thought and rewrite it.","free calm daily health"],
+      ["Learn a new skill","","Competence builds confidence.","Pick one skill for 30 days.","free proven student"],
+      ["Join a class","","Group classes push you gently.","Try one beginner class this month.","cheap social fun weekend"]]),
+    T("Sleep Habits","anyone who wakes up tired","Try","sleep sleeping tired rest bedtime insomnia night",[
+      ["Same bedtime","","Your body loves a schedule.","Set a wind-down alarm.","free easy daily proven health"],
+      ["Cool, dark room","","Darkness and cool air help sleep.","Try an eye mask.","cheap easy health calm"],
+      ["Caffeine cutoff","","Caffeine can linger for hours.","Stop by early afternoon.","free easy health proven"],
+      ["Wind-down routine","","Signal to your brain it's bedtime.","Same three steps every night.","free calm daily health"],
+      ["No phone in bed","","Scrolling keeps your brain alert.","Use a real alarm clock.","cheap easy calm health"],
+      ["Morning light","","Daylight helps set your body clock.","Get outside soon after waking.","free easy daily health"],
+      ["Brain dump before bed","","Write worries down so they stop looping.","Keep a notepad on your nightstand.","free calm solo daily"],
+      ["Sleep stories","","Calm audio helps some people drift off.","Try a free meditation app.","free mobile calm fun"]], "General sleep tips, not medical advice."),
+    T("Focus Tricks","anyone whose attention runs off","Try","focus attention distraction concentrate adhd deep work",[
+      ["Single-tab rule","","Close everything except the task.","Use one browser window per task.","free easy fast proven"],
+      ["Timer sprints","","A countdown makes starting easier.","Set a 15-minute timer and begin.","free easy fast daily"],
+      ["Body doubling","","Working next to someone keeps you on task.","Join a video coworking room.","free online social underrated"],
+      ["Noise-cancelling or brown noise","","Steady sound blocks distractions.","Try a brown-noise track.","free calm fun"],
+      ["Write the next step","","Vague tasks invite procrastination.","Rewrite tasks as physical actions.","free easy proven"],
+      ["Website blockers","","Block distracting sites during work.","Install a free blocker extension.","free online proven"],
+      ["Movement breaks","","Short movement resets attention.","Walk between work blocks.","free health fast"],
+      ["Reward stacking","","Pair boring tasks with something nice.","Save a favorite drink for admin time.","free fun easy"]]),
+    T("Stress Relievers","anyone who needs a calmer head","Try","stress relief calm relax anxiety overwhelm burnout breathe",[
+      ["Box breathing","","Breathe in, hold, out, hold for four counts each.","Do four rounds now.","free easy fast calm health proven"],
+      ["Walk without your phone","","Movement plus quiet clears your head.","Take a ten-minute loop.","free easy calm health"],
+      ["Brain dump","","Get everything out of your head onto paper.","Write for five minutes.","free fast calm solo"],
+      ["Call a friend","","Talking things through helps.","Text someone you trust.","free social easy"],
+      ["Guided meditation","","Short guided sessions help many people.","Try a free app for five minutes.","free mobile calm daily"],
+      ["Tidy one surface","","A small reset can feel big.","Clear your desk.","free fast easy calm"],
+      ["Creative play","","Doodling, music or crafts take your mind off things.","Doodle for ten minutes.","free creative fun calm"],
+      ["Nature time","","Green spaces help you unwind.","Sit in a park this weekend.","free calm weekend health"]], "For everyday stress. If you're struggling, please reach out to a doctor or mental health professional."),
+
+    // ===== tools =====
+    T("Design Tools","anyone making logos, posts and flyers without a designer","Best for","design designer logo graphic graphics brand flyer poster tools",[
+      ["Canva","https://www.canva.com","Drag-and-drop templates for posts, logos and flyers.","Social posts","free easy fast online popular mobile"],
+      ["Figma","https://www.figma.com","Pro-level design tool with a free starter plan.","Logos, sites and app mockups","free online pro popular creative"],
+      ["Photopea","https://www.photopea.com","Photoshop-style editor in the browser.","Photo edits","free online underrated pro"],
+      ["Adobe Express","https://www.adobe.com/express/","Templates plus quick tricks like background removal.","Content in many sizes","free easy fast online mobile"],
+      ["Kittl","https://www.kittl.com","Type effects and merch-style graphics.","T-shirt designs","free online creative underrated"],
+      ["remove.bg","https://www.remove.bg","Removes photo backgrounds in seconds.","Product shots","free fast easy online ai"],
+      ["Coolors","https://coolors.co","Generate color palettes fast.","Brand colors","free fast easy online creative fun"],
+      ["Google Fonts","https://fonts.google.com","Hundreds of free typefaces.","Brand fonts","free online popular"],
+      ["Krita","https://krita.org","Free, open-source painting app.","Digital art","free creative pro underrated"],
+      ["Procreate","https://procreate.com","Powerful drawing app for iPad.","Illustration","cheap creative mobile pro popular"]]),
+    T("Website Builders","first-timers who need a site this weekend","Best for","website websites site web landing page portfolio online builder",[
+      ["Carrd","https://carrd.co","One-page sites with a free plan.","Landing pages","free cheap easy fast online underrated"],
+      ["Framer","https://www.framer.com","Design-led builder with animations built in.","Brand sites","online creative pro"],
+      ["Squarespace","https://www.squarespace.com","Polished templates with selling and booking.","Portfolios","easy online popular creative"],
+      ["Wix","https://www.wix.com","Huge template library and drag-and-drop editor.","Service businesses","free easy online popular"],
+      ["WordPress.com","https://wordpress.com","Blog-first builder with a big plugin world.","Content sites","free online popular pro"],
+      ["Notion Sites","https://www.notion.com/product/sites","Publish Notion pages as a website.","Quick info pages","free easy fast online"],
+      ["Shopify","https://www.shopify.com","The go-to for online stores.","Selling products","online popular earn pro"],
+      ["Big Cartel","https://www.bigcartel.com","Simple stores for artists and makers.","Small drops","free cheap easy online creative"],
+      ["Webflow","https://webflow.com","Visual builder with pro-level control.","Custom sites","online pro creative"],
+      ["Vercel","https://vercel.com","Free hosting for sites you build yourself.","Coders","free online pro fast"]]),
+    T("AI Tools","solo founders who need a tireless assistant","Best for","ai artificial intelligence chatgpt assistant write writing research automation chatbot tools",[
+      ["ChatGPT","https://chatgpt.com","General-purpose assistant for writing and ideas.","Brainstorming","free easy fast online ai popular mobile"],
+      ["Claude","https://claude.ai","Strong at long documents, writing and building pages.","Writing and planning","free easy online ai pro mobile"],
+      ["Perplexity","https://www.perplexity.ai","AI search that shows its sources.","Research","free fast online ai mobile"],
+      ["Gemini","https://gemini.google.com","Google's assistant, built into its apps.","Google users","free easy online ai mobile popular"],
+      ["Canva Magic Studio","https://www.canva.com/magic/","AI design features inside Canva.","Quick visuals","easy online ai creative"],
+      ["NotebookLM","https://notebooklm.google.com","Upload sources and ask questions about them.","Studying","free online ai student underrated"],
+      ["CapCut","https://www.capcut.com","Video editor with AI captions and effects.","Short videos","free easy mobile ai creative"],
+      ["Zapier","https://zapier.com","Connect apps and automate tasks, with AI features.","Automation","free online ai pro"],
+      ["Otter.ai","https://otter.ai","Transcribes meetings and voice notes.","Notes from calls","free online ai mobile"]]),
+    T("Productivity Apps","anyone with big plans and a messy brain","Best for","productivity productive apps app planning organize tasks notes todo",[
+      ["Notion","https://www.notion.so","Docs, databases and to-dos in one place.","A life or business HQ","free online popular pro creative"],
+      ["Todoist","https://todoist.com","Fast to-do app with a free plan.","Daily tasks","free easy mobile daily"],
+      ["Obsidian","https://obsidian.md","Notes linked like a personal wiki.","Thinking and journaling","free solo pro underrated"],
+      ["Trello","https://trello.com","Drag cards across boards.","Visual planning","free easy online social"],
+      ["Google Calendar","https://calendar.google.com","Block time for priorities.","Time blocking","free easy mobile daily popular"],
+      ["TickTick","https://ticktick.com","To-dos plus a built-in focus timer.","Tasks and focus","free mobile daily underrated"],
+      ["Forest","https://www.forestapp.cc","Grow a virtual tree while you stay off your phone.","Phone breaks","cheap mobile fun eco"],
+      ["Things","https://culturedcode.com/things/","Beautifully simple to-do app for Apple devices.","Apple users","easy mobile calm"],
+      ["Sunsama","https://www.sunsama.com","Plan your day calmly across tools.","Daily planning","online calm pro daily"]]),
+    T("Fitness Apps","anyone who wants to move more without a gym bill","Best for","fitness fit workout workouts exercise gym training run running yoga",[
+      ["Nike Training Club","https://www.nike.com/ntc-app","Free guided workouts for all levels.","Home workouts","free easy mobile health popular"],
+      ["NHS Couch to 5K","https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/","Free plan from zero to 5K.","New runners","free easy mobile health proven"],
+      ["Yoga With Adriene","https://www.youtube.com/@yogawithadriene","Free yoga videos.","Flexibility and calm","free easy calm health online"],
+      ["Strava","https://www.strava.com","Track runs and rides with friends.","Motivation","free mobile social health fun popular"],
+      ["Hevy","https://www.hevyapp.com","Simple gym workout logger.","Strength training","free mobile health pro"],
+      ["Sweat","https://www.sweat.com","Programs from trainers you can follow.","Structured plans","mobile health proven"],
+      ["Down Dog","https://www.downdogapp.com","Yoga and workouts that change every session.","Variety","mobile calm health"],
+      ["Zombies, Run!","https://zombiesrungame.com","Running story game.","Making runs fun","mobile fun health"]]),
+    T("Calming Apps","anyone who wants a calmer head","Best for","calm calming meditation meditate mindfulness stress relax sleep mental",[
+      ["Insight Timer","https://insighttimer.com","Huge free library of guided meditations.","Variety","free mobile calm health popular"],
+      ["Medito","https://meditofoundation.org","Nonprofit meditation app, completely free.","No paywalls","free mobile calm underrated"],
+      ["UCLA Mindful","https://www.uclahealth.org/programs/marc/free-guided-meditations","Free guided meditations from UCLA.","Short sessions","free easy calm"],
+      ["Headspace","https://www.headspace.com","Friendly guided meditation.","Beginners","easy mobile calm popular"],
+      ["Calm","https://www.calm.com","Sleep stories and meditations.","Sleep","mobile calm popular"],
+      ["Finch","https://finchcare.com","Self-care pet app with gentle goals.","Making self-care fun","free mobile fun calm"],
+      ["How We Feel","https://howwefeel.org","Free mood journal for naming emotions.","Mood check-ins","free mobile calm underrated"]], "For everyday stress. If you're struggling, please reach out to a doctor or mental health professional."),
+    T("Video Editors","anyone making TikToks, Reels and product videos","Best for","video videos edit editing editor tiktok reels youtube content",[
+      ["CapCut","https://www.capcut.com","Editor built around short-form trends.","TikTok and Reels","free easy fast mobile popular ai"],
+      ["DaVinci Resolve","https://www.blackmagicdesign.com/products/davinciresolve","Pro editor with a powerful free version.","Polished videos","free pro creative"],
+      ["Clipchamp","https://clipchamp.com","Browser editor from Microsoft.","Quick edits","free easy online"],
+      ["iMovie","https://www.apple.com/imovie/","Free and simple on Apple devices.","Beginners","free easy mobile"],
+      ["InShot","https://inshot.com","Phone editor for quick social clips.","On-the-go edits","free easy mobile fast"],
+      ["Descript","https://www.descript.com","Edit video by editing the transcript.","Talking videos","online ai pro"],
+      ["Shotcut","https://shotcut.org","Free, open-source desktop editor.","Free desktop editing","free underrated pro"]]),
+    T("Email Tools","anyone starting an email list","Best for","email emails newsletter newsletters mailing list marketing subscribers",[
+      ["MailerLite","https://www.mailerlite.com","Clean builder with a free plan.","First email list","free easy online"],
+      ["Kit","https://kit.com","Creator-focused email, formerly ConvertKit.","Creators selling things","free online earn creative"],
+      ["Beehiiv","https://www.beehiiv.com","Newsletters with growth tools.","Newsletter businesses","free online earn pro"],
+      ["Substack","https://substack.com","Free to publish; takes a cut on paid posts.","Writers","free easy online popular social"],
+      ["Mailchimp","https://mailchimp.com","Well-known tool with a limited free plan.","Simple announcements","free easy online popular"],
+      ["Brevo","https://www.brevo.com","Email and SMS with a free tier.","Small shops","free online"],
+      ["Buttondown","https://buttondown.com","Minimal, privacy-friendly newsletters.","Simple writing","free calm underrated online"]]),
+    T("Social Media Tools","anyone posting on more than one app","Best for","social media instagram tiktok schedule scheduler posting content planner",[
+      ["Buffer","https://buffer.com","Simple scheduling with a free plan.","Getting started","free easy online"],
+      ["Later","https://later.com","Visual planner for Instagram and TikTok.","Visual feeds","online creative mobile"],
+      ["Metricool","https://metricool.com","Scheduling plus analytics, free plan.","Tracking what works","free online pro underrated"],
+      ["Meta Business Suite","https://business.facebook.com","Free scheduling for Instagram and Facebook.","Meta-only brands","free easy mobile"],
+      ["Linktree","https://linktr.ee","Link-in-bio page with a free plan.","Bio links","free easy fast mobile popular"],
+      ["Beacons","https://beacons.ai","Link-in-bio with a store and media kit.","Creators selling things","free mobile earn creative"],
+      ["TikTok Creative Center","https://ads.tiktok.com/business/creativecenter","See trending sounds and hashtags.","Trend hunting","free online fun"],
+      ["CapCut","https://www.capcut.com","Editing with trending templates.","Quick Reels","free easy mobile fast ai"]]),
+    T("Communities","founders who want people to build alongside","Best for","community communities network founders friends people forum support",[
+      ["Indie Hackers","https://www.indiehackers.com","Founders sharing revenue and lessons.","Bootstrappers","free online social solo"],
+      ["Product Hunt","https://www.producthunt.com","Launch platform and community.","Launch day","free online social popular"],
+      ["r/smallbusiness","https://www.reddit.com/r/smallbusiness/","Practical small-business questions.","Everyday questions","free online social"],
+      ["r/Entrepreneur","https://www.reddit.com/r/Entrepreneur/","Founders of all kinds.","Ideas and feedback","free online social popular"],
+      ["Meetup","https://www.meetup.com","Find local groups and events.","Meeting in person","free social weekend fun"],
+      ["Discord servers","https://discord.com","Niche communities for nearly every interest.","Hanging out online","free online social mobile fun"],
+      ["Focusmate","https://www.focusmate.com","Video coworking sessions with strangers.","Accountability","free online social underrated"]]),
+    T("Habit Trackers","anyone building a habit that sticks","Best for","habit habits tracker tracking streak routine goals",[
+      ["Streaks","https://streaksapp.com","Simple habit streaks for Apple devices.","Apple users","cheap easy mobile daily"],
+      ["Habitica","https://habitica.com","Turns habits into a role-playing game.","Gamers","free fun mobile social"],
+      ["Loop Habit Tracker","https://loophabits.org","Free, open-source Android tracker.","Android users","free mobile underrated calm"],
+      ["Paper habit tracker","","A grid in a notebook works.","Analog lovers","free cheap easy calm creative"],
+      ["Finch","https://finchcare.com","Grow a little bird by doing self-care.","Gentle goals","free mobile fun calm"],
+      ["Notion habit template","https://www.notion.so","Track habits inside your Notion setup.","Notion users","free online"],
+      ["Way of Life","https://wayoflifeapp.com","Color-coded yes/no habit journal.","Visual trackers","mobile daily"]])
+  ];
+
+  WORDS.push(["$0","free"],["No-Cost","free"],["Low-Effort","easy"],["Speedy","fast"],["10-Minute","fast"],["Laptop-Only","online"],["Lesser-Known","underrated"],["Fan-Favorite","popular"],["Green","eco"],["On-the-Go","mobile"],["Everyday","daily"],["Chill","calm"],["Next-Level","pro"],["Profitable","earn"],["Feel-Good","health"]);
+  TOPICS.push(
+    T("App Ideas","people who want to build their first app","First step","app apps idea ideas build software mobile startup",[
+      ["Habit streak app for one niche","","A tracker built for one group, like runners or language learners.","Mock it up in Figma this weekend.","free easy mobile creative daily solo"],
+      ["Local events finder","","One place for small events in your city.","Collect 20 events in a spreadsheet first.","free online social fun weekend"],
+      ["Study buddy matcher","","Pair students for study sessions.","Test it with a group chat before coding.","free easy social student online"],
+      ["Thrift price checker","","Snap a photo to see what an item resells for.","Start with a manual Google Form version.","mobile eco earn ai fun"],
+      ["AI meal planner","","Plans meals from what's already in your fridge.","Prototype it with a chatbot and a prompt.","ai mobile health daily easy"],
+      ["Mood journal","","Quick daily check-ins with gentle prompts.","Build a no-code version in a weekend.","free calm daily mobile health solo"],
+      ["Gift idea generator","","Suggests gifts from a few questions.","Make a quiz in Typeform first.","fun easy ai online creative"],
+      ["Tip splitter for groups","","Split bills and tips with friends fairly.","Sketch the three screens on paper.","free easy fast mobile social"],
+      ["Plant care reminders","","Reminds you when each plant needs water.","Start with calendar reminders for yourself.","free easy calm eco mobile daily"],
+      ["Portfolio builder for students","","Turn school projects into a shareable page.","Make your own portfolio first.","free easy student creative online"]], ),
+    T("Content Ideas","creators who never know what to post","First step","content ideas post posts tiktok instagram youtube creator social",[
+      ["Day-in-the-life vlogs","","Show your routine; people love the ordinary.","Film one day in 10-second clips.","free easy mobile creative fun daily popular"],
+      ["Before-and-after posts","","Transformations get attention.","Document one small project start to finish.","free easy creative fun popular"],
+      ["Build in public","","Share progress on what you're making.","Post one honest update a week.","free online solo social proven"],
+      ["Myth-busting series","","Correct common mistakes in your field.","List five myths you hear often.","free online pro proven"],
+      ["Tiny tutorials","","Teach one thing in under 60 seconds.","Pick the question friends ask you most.","free fast easy mobile proven"],
+      ["Reaction posts","","React to trends or news in your niche.","Save trending posts for a week.","free fast mobile fun social"],
+      ["Tool reviews","","Honest takes on apps and products.","Review one tool you use daily.","free online solo earn"],
+      ["Desk or bag tours","","People love seeing what others use.","Film yours in one take.","free easy fun creative"],
+      ["Weekly roundup","","Collect the best things you found this week.","Save links in one note all week.","free calm weekend online"],
+      ["AI experiments","","Try AI tools on real tasks and share results.","Pick one task and film the attempt.","free ai online fun"]]),
+    T("Passive Income Ideas","people who want income that doesn't need them every hour","Reality check","passive income money earn side digital products royalties",[
+      ["Digital templates","","Make once, sell many times.","It takes upfront work and marketing.","cheap online creative solo earn proven"],
+      ["Stock photos","","Earn small amounts each time a photo is licensed.","Volume matters; expect small payouts.","cheap creative solo calm online"],
+      ["Print-on-demand designs","","Designs sell on products printed when ordered.","Most designs sell slowly; test many.","cheap online creative solo"],
+      ["Online course","","Record once, sell repeatedly.","Keeping it updated takes time.","online pro earn proven"],
+      ["Affiliate content","","Earn commissions on things you recommend.","Only recommend what you trust.","free online solo earn"],
+      ["Ebook or guide","","Package what you know into a short guide.","Short and specific sells better.","free cheap easy online solo"],
+      ["YouTube library","","Older videos can keep earning views.","Needs consistency to get going.","free online creative solo"],
+      ["Licensing music or sounds","","Sell beats, loops or sound effects.","Best if you already make music.","online creative solo underrated"]], "Passive income still takes real work up front. Not financial advice."),
+    T("Pop-Up Ideas","people who want to test an idea in real life","First step","pop up popup market stall event booth test local shop",[
+      ["Market stall","","Test products face to face at a local market.","Book one small market this month.","cheap social weekend fun proven"],
+      ["Coffee cart","","Coffee at events, offices or campuses.","Check permits before you start.","social weekend earn fun"],
+      ["Clothing swap","","Host a swap and sell extras or entry.","Partner with a café for space.","cheap eco social weekend fun"],
+      ["Workshop night","","Teach a craft for a small ticket price.","Run one with friends as a test.","social creative weekend earn"],
+      ["Flower bar","","Build-your-own bouquets at events.","Pop up at one friend's event.","creative social weekend fun"],
+      ["Bake sale with a brand","","Treat it like a product launch.","Check local food rules first.","cheap easy social weekend"],
+      ["Photo booth","","Rent a fun booth for parties.","Start with a phone, ring light and props.","cheap fun creative social weekend"],
+      ["Repair café","","Fix things for donations.","Gather a few handy friends.","free cheap eco social"]]),
+    T("Journaling Prompts","anyone who wants to think more clearly","Try","journal journaling prompts writing reflection self thoughts",[
+      ["What drained me today?","","Spot what to cut back on.","Write three lines tonight.","free easy calm daily solo"],
+      ["What am I avoiding?","","Name the thing you keep pushing back.","Then write the smallest next step.","free proven solo calm"],
+      ["Best part of today","","Ends the day on something good.","One sentence is enough.","free easy fast daily calm"],
+      ["If money didn't matter…","","Reveals what you actually want.","Write for five minutes.","free creative fun solo"],
+      ["Letter to future me","","Set intentions you'll reread.","Date it and seal it for a year.","free creative calm fun"],
+      ["What did I learn this week?","","Turns experience into lessons.","Do it every Sunday.","free weekend calm proven"],
+      ["Three ideas a day","","Trains your idea muscle.","Write three ideas, good or bad.","free easy daily creative fun"],
+      ["What would make tomorrow great?","","Sets up the next day.","List three things.","free easy fast daily"],
+      ["Brain dump","","Empty everything on your mind.","Set a five-minute timer.","free fast calm health"]]),
+    T("Weekend Resets","anyone who wants Monday to feel lighter","Try","weekend reset sunday routine plan clean organize recharge",[
+      ["Sunday planning hour","","Plan meals, tasks and plans for the week.","Pick one hour and protect it.","free proven calm weekend"],
+      ["Clean one zone","","Small, visible wins feel great.","Choose your desk or one shelf.","free easy fast weekend"],
+      ["Meal prep","","Cook a few basics for the week.","Make one grain, one protein, one veg.","cheap health weekend proven"],
+      ["Digital declutter","","Clear downloads, desktop and inbox.","Spend 20 minutes on it.","free fast online calm"],
+      ["Long walk","","Fresh air and no agenda.","Leave the earbuds at home once.","free easy calm health weekend"],
+      ["Laundry and outfit plan","","Fewer morning decisions.","Lay out Monday's outfit.","free easy weekend"],
+      ["Try something new","","New things keep life interesting.","Pick one new café, class or route.","cheap fun social weekend"],
+      ["Call someone you miss","","Connection recharges you.","Schedule one call.","free social calm weekend"],
+      ["Self-care block","","Time just for you.","Bath, face mask or a nap.","cheap calm health weekend"]]),
+    T("Hobbies to Try","anyone who needs something new to love","Try it if","hobby hobbies new try fun creative learn activity",[
+      ["Film photography","","Slower, more intentional photos.","You like surprises","creative fun calm"],
+      ["Running","","Free, simple and great for your head.","You want low-cost fitness","free cheap easy health daily"],
+      ["Pottery","","Hands-on and calming.","You like making things","creative calm social weekend"],
+      ["Bouldering","","Climbing puzzles with friendly crowds.","You like social sports","social fun health weekend"],
+      ["Crochet","","Portable and relaxing.","You want a cozy hobby","cheap easy calm creative solo"],
+      ["Cooking new cuisines","","Travel through food at home.","You like eating well","cheap creative fun health"],
+      ["Journaling","","Free and good for your head.","You overthink","free easy calm daily solo"],
+      ["Language learning","","Opens up travel and new friends.","You like long-term goals","free mobile daily proven"],
+      ["Gardening","","Grow herbs even on a windowsill.","You like slow progress","cheap eco calm health"],
+      ["Board game nights","","Social fun without screens.","You like hosting","cheap social fun weekend"]]),
+    T("Budget Travel Tips","people who want to see more for less","Try","travel trip trips budget cheap flights hostel backpack explore",[
+      ["Travel mid-week","","Flights and stays often cost less.","Compare Tuesday and Friday prices.","free cheap proven easy"],
+      ["Price alerts","","Let flight prices come to you.","Set alerts on Google Flights.","free online mobile proven"],
+      ["Hostels with private rooms","","Cheaper than hotels, more social.","Read recent reviews first.","cheap social fun"],
+      ["Overnight trains and buses","","Save a night's stay.","Bring an eye mask and earplugs.","cheap eco underrated"],
+      ["Free walking tours","","Learn a city by tipping what you can.","Search the city's name plus free walking tour.","free social fun easy"],
+      ["Cook some meals","","Groceries cost less than restaurants.","Book places with a kitchen.","cheap health"],
+      ["Carry-on only","","No bag fees and faster trips.","Pack a capsule wardrobe.","cheap easy fast eco"],
+      ["Travel off-season","","Fewer crowds and lower prices.","Look at shoulder seasons.","cheap calm proven"],
+      ["Work while traveling","","Remote work stretches trips.","Check coworking spaces and visa rules.","online earn pro"]]),
+    T("Meal Prep Ideas","busy people who want to eat better","Try","meal prep cooking cook food recipes lunch healthy eat",[
+      ["Sheet-pan dinners","","Everything roasts on one tray.","Chop veggies and protein, roast together.","cheap easy fast health"],
+      ["Overnight oats","","Breakfast ready when you wake up.","Mix oats, milk and fruit at night.","cheap easy fast daily health"],
+      ["Big-batch soup","","Cook once, eat all week.","Freeze portions.","cheap easy health calm"],
+      ["Grain bowls","","Mix and match grains, veg and protein.","Prep three parts on Sunday.","cheap health creative weekend"],
+      ["Freezer burritos","","Grab-and-go meals.","Wrap them in foil and freeze.","cheap fast"],
+      ["Snack boxes","","Healthy snacks ready to grab.","Portion nuts, fruit and veg.","cheap easy health daily"],
+      ["Pasta salads","","Great cold for lunches.","Make a big bowl for three days.","cheap easy fast"],
+      ["Theme nights","","Taco Tuesday makes planning easy.","Pick themes for each weeknight.","easy fun social"]]),
+    T("Workout Routines","anyone who wants to get stronger without overthinking","Try","workout workouts exercise fitness gym training routine strength",[
+      ["Bodyweight circuit","","Squats, push-ups and lunges anywhere.","Do three rounds of ten each.","free easy health fast daily"],
+      ["Couch to 5K","","Builds from walking to running.","Follow a free plan three times a week.","free easy health proven mobile"],
+      ["Daily walk goal","","Simple movement adds up.","Walk after one meal each day.","free easy health daily calm"],
+      ["Beginner strength split","","Two or three gym days a week.","Learn form before adding weight.","health proven pro"],
+      ["Yoga flow","","Strength and flexibility together.","Follow a free video.","free calm health easy online"],
+      ["Dance workouts","","Cardio that feels like fun.","Try a dance video at home.","free fun health"],
+      ["Stretch before bed","","Helps you wind down.","Ten minutes of gentle stretches.","free calm health daily"],
+      ["Group classes","","Accountability built in.","Try one beginner class.","social fun health weekend"],
+      ["7-minute workout","","Short, intense, done.","Use a free timer app.","free fast mobile health"]], "General fitness ideas. Check with a doctor before starting if you have health concerns."),
+    T("Reading Habits","anyone who wants to read more","Try","reading read books book habit library",[
+      ["Ten pages a day","","Small daily reading adds up fast.","Keep a book by your bed.","free easy daily calm"],
+      ["Library apps","","Borrow ebooks and audiobooks free.","Check Libby with your library card.","free mobile underrated"],
+      ["Audiobooks on walks","","Turn walks into reading time.","Download one for your commute.","mobile health daily"],
+      ["Book club","","Discussion makes books stick.","Start one with two friends.","free social fun"],
+      ["Quit bad books","","Life's too short.","Give a book 50 pages, then decide.","free easy fast"],
+      ["Reading nook","","A cozy spot invites reading.","Add a lamp and blanket to one chair.","cheap calm creative"],
+      ["Goodreads or StoryGraph","","Track and discover books.","Log the last five books you read.","free online social"],
+      ["Phone-free reading time","","No notifications, more focus.","Read for 20 minutes with your phone away.","free calm proven"]]),
+    T("Digital Detox Tips","anyone whose phone runs their day","Try","digital detox phone screen time social media scrolling addiction",[
+      ["Grayscale mode","","A gray screen is less tempting.","Turn it on in accessibility settings.","free easy fast mobile underrated"],
+      ["App time limits","","Set daily caps on your biggest time sinks.","Limit one app to 30 minutes.","free easy mobile proven"],
+      ["No-phone mornings","","Start the day on your terms.","Use a real alarm clock.","cheap calm daily health"],
+      ["Notification cleanup","","Only people should be able to ping you.","Turn off all app notifications for a day.","free fast easy calm"],
+      ["Phone-free meals","","Better conversations and food.","Stack phones at dinner.","free social health"],
+      ["Delete one app","","Remove the worst offender.","Use its website instead for a week.","free fast easy"],
+      ["Screen-free Sunday","","A weekly reset.","Plan offline activities.","free calm weekend health"],
+      ["Bedroom charging ban","","Better sleep without the scroll.","Charge your phone in the kitchen.","free easy health proven"]]),
+    T("Public Speaking Tips","anyone who gets nervous in front of people","Try","public speaking presentation pitch talk nervous confidence speech",[
+      ["Practice out loud","","Silent rehearsal isn't enough.","Run it out loud three times.","free proven easy"],
+      ["Record yourself","","See what the audience sees.","Film one practice run on your phone.","free mobile proven"],
+      ["Start with a story","","Stories grab attention fast.","Open with a 30-second story.","free creative proven"],
+      ["Slow down","","Nerves make us rush.","Pause after every key point.","free easy calm"],
+      ["Know your first line","","Strong starts calm nerves.","Memorize your opening.","free easy fast"],
+      ["Join a speaking club","","Regular practice builds comfort.","Visit a local Toastmasters club.","cheap social proven"],
+      ["Breathe before you start","","Slow breaths steady your voice.","Do box breathing backstage.","free calm health fast"],
+      ["Fewer slides","","Let people listen to you.","One idea per slide.","free easy pro"]]),
+    T("Interview Tips","job hunters and students going for their first roles","Try","interview interviews job jobs hiring career resume application",[
+      ["Research the company","","Know what they do and why you care.","Read their last three news posts.","free online proven"],
+      ["STAR stories","","Situation, task, action, result.","Prep three stories this way.","free proven pro"],
+      ["Practice with AI","","Mock interviews on demand.","Ask an AI assistant to interview you.","free ai online fast"],
+      ["Ask good questions","","Shows real interest.","Prepare three thoughtful questions.","free easy proven"],
+      ["Mock interview with a friend","","Real-time practice.","Swap roles with a friend.","free social student"],
+      ["Thank-you note","","A short follow-up stands out.","Send it within a day.","free easy fast"],
+      ["Test your tech","","Avoid video-call surprises.","Check camera and mic beforehand.","free easy online"],
+      ["Know your story","","A clear two-minute intro.","Practice 'tell me about yourself'.","free proven student"]]),
+    T("Note-Taking Apps","anyone drowning in ideas and notes","Best for","notes note taking app apps writing ideas second brain",[
+      ["Notion","https://www.notion.so","Notes plus databases.","Organized notes","free online popular pro"],
+      ["Obsidian","https://obsidian.md","Linked notes stored on your device.","Connecting ideas","free solo pro underrated"],
+      ["Apple Notes","https://www.apple.com/","Built into iPhone and Mac.","Quick capture","free easy fast mobile"],
+      ["Google Keep","https://keep.google.com","Sticky-note style notes.","Lists and reminders","free easy fast mobile"],
+      ["Bear","https://bear.app","Beautiful writing app for Apple devices.","Writers","mobile calm creative"],
+      ["OneNote","https://www.onenote.com","Free notebook-style notes from Microsoft.","Students","free student online"],
+      ["Logseq","https://logseq.com","Open-source outliner for linked notes.","Daily notes","free underrated daily pro"],
+      ["NotebookLM","https://notebooklm.google.com","AI that answers questions about your notes.","Studying","free ai student online"]]),
+    T("Stock Photo Sites","anyone who needs images without a photographer","Best for","stock photo photos images pictures free download video",[
+      ["Unsplash","https://unsplash.com","High-quality free photos.","Website and social images","free easy fast online popular"],
+      ["Pexels","https://www.pexels.com","Free photos and videos.","Video B-roll","free easy online popular"],
+      ["Pixabay","https://pixabay.com","Free photos, illustrations and music.","Variety","free easy online"],
+      ["Mixkit","https://mixkit.co","Free video clips and music.","Short videos","free online underrated creative"],
+      ["Burst","https://burst.shopify.com","Free photos for online stores.","Product shots","free online underrated"],
+      ["Canva photos","https://www.canva.com","Photos built into your designs.","Quick posts","free easy online mobile"],
+      ["Openverse","https://openverse.org","Search openly licensed images.","Creative Commons","free online underrated"]], "Always check each image's license before using it."),
+    T("Learning Apps","people who learn on their phones","Best for","learning learn app apps mobile education skills daily",[
+      ["Duolingo","https://www.duolingo.com","Daily language lessons.","Languages","free easy mobile daily fun popular"],
+      ["Khan Academy","https://www.khanacademy.org","Free lessons in many subjects.","School subjects","free easy mobile student"],
+      ["Brilliant","https://brilliant.org","Interactive math, science and coding.","Problem solving","mobile fun pro"],
+      ["Anki","https://apps.ankiweb.net","Flashcards with spaced repetition.","Memorizing","free proven student"],
+      ["Coursera","https://www.coursera.org","University courses on your phone.","Deep learning","free mobile student"],
+      ["Mimo","https://mimo.org","Learn to code in short sessions.","Coding","easy mobile daily fun"],
+      ["Blinkist","https://www.blinkist.com","Short summaries of nonfiction books.","Quick ideas","mobile fast"],
+      ["Elevate","https://elevateapp.com","Brain-training games.","Daily practice","mobile fun daily"]]),
+    T("Newsletters","people who want smart stuff in their inbox","Best for","newsletter newsletters email read news business tech",[
+      ["Morning Brew","https://www.morningbrew.com","Quick, fun daily business news.","Daily news","free easy daily fun popular"],
+      ["The Hustle","https://thehustle.co","Business and tech stories.","Business ideas","free daily earn"],
+      ["Lenny's Newsletter","https://www.lennysnewsletter.com","Advice on products and growth.","Product people","free pro"],
+      ["TLDR","https://tldr.tech","Daily tech news in five minutes.","Tech news","free fast daily"],
+      ["Dense Discovery","https://www.densediscovery.com","Design, culture and tools.","Creatives","free creative underrated weekend"],
+      ["Not Boring","https://www.notboring.co","Long essays on business strategy.","Deep dives","free pro"],
+      ["Indie Hackers newsletter","https://www.indiehackers.com","Stories from bootstrapped founders.","Solo founders","free solo earn"]]),
+    T("Payment Apps","sellers taking money online or in person","Best for","payment payments pay checkout card reader pos money",[
+      ["Stripe","https://stripe.com","Online payments and payment links.","Online checkout","online pro popular"],
+      ["Square","https://squareup.com","Card readers and a free point-of-sale app.","Markets and pop-ups","easy mobile popular weekend"],
+      ["SumUp","https://www.sumup.com","Low-cost card readers, popular in Europe.","EU sellers","cheap easy mobile"],
+      ["PayPal","https://www.paypal.com","Checkout many buyers trust.","Quick payments","easy online popular fast"],
+      ["Ko-fi","https://ko-fi.com","Tips and small sales with no setup.","Creators","free easy online creative"],
+      ["Gumroad","https://gumroad.com","Sell digital products instantly.","Digital goods","free easy online fast"]]),
+    T("Invoice Tools","freelancers and side hustlers getting paid","Best for","invoice invoices invoicing billing accounting bookkeeping paid freelance",[
+      ["Wave","https://www.waveapps.com","Free invoicing and basic accounting.","US and Canada freelancers","free easy online"],
+      ["Zoho Invoice","https://www.zoho.com/invoice/","Free invoices with reminders.","Many currencies","free online pro"],
+      ["Invoice Ninja","https://invoiceninja.com","Open-source invoicing, free hosted plan.","Open-source fans","free online underrated"],
+      ["PayPal Invoicing","https://www.paypal.com/invoice","Invoices clients can pay by card.","PayPal users","easy online fast"],
+      ["Stripe Invoicing","https://stripe.com/invoicing","Invoices with online payment.","Online clients","online pro"],
+      ["Google Docs template","https://docs.google.com","A simple invoice template.","Your first invoice","free easy fast"]]),
+    T("Marketplaces","makers who want buyers before they have a website","Best for","marketplace marketplaces sell handmade vintage art products buyers resale",[
+      ["Etsy","https://www.etsy.com","The biggest handmade and vintage marketplace.","Handmade goods","easy online creative popular"],
+      ["Depop","https://www.depop.com","Fashion marketplace popular with Gen Z.","Vintage and streetwear","easy mobile eco fun"],
+      ["Vinted","https://www.vinted.com","Secondhand fashion, huge in Europe.","Everyday clothing","free easy mobile eco"],
+      ["Faire","https://www.faire.com","Wholesale to independent shops.","Getting into boutiques","online pro earn"],
+      ["eBay","https://www.ebay.com","Huge audience for almost anything.","Rare finds","easy online popular"],
+      ["Facebook Marketplace","https://www.facebook.com/marketplace/","Sell locally with no shipping.","Furniture and big items","free easy mobile eco social"],
+      ["Gumroad","https://gumroad.com","Marketplace for digital products.","Digital goods","free easy online"]])
+  );
+
+  // Build every combo that has at least 3 matching picks.
+  var LISTS = [];
+  (function(){
+    var seen = {};
+    TOPICS.forEach(function(t, ti){
+      WORDS.forEach(function(w){
+        var tag = w[1];
+        var picks = t.picks.filter(function(p){ return p.tags.indexOf(tag) >= 0 || (tag === "cheap" && p.tags.indexOf("free") >= 0); });
+        if (picks.length < 3) return;
+        var key = (w[0] + "|" + t.kind).toLowerCase();
+        if (seen[key]) return; seen[key] = 1;
+        LISTS.push({ adj:w[0], kind:t.kind, who:t.who, lab:t.lab, note:t.note, kw:t.kw, topic:ti, picks:picks.slice(0, 6) });
+      });
+    });
+  })();
+
+
+  var $ = function(id){ return document.getElementById(id); };
+  var rand = function(n){ return Math.floor(Math.random()*n); };
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var COLORS = ["rgba(255,230,46,.5)","rgba(255,122,168,.5)","rgba(255,90,60,.48)","rgba(110,224,107,.5)"];
+  var SOLID = ["rgba(255,230,46,.8)","rgba(255,122,168,.75)","rgba(255,90,60,.65)","rgba(110,224,107,.75)"];
+  function uniq(a){ var s = {}; return a.filter(function(x){ var k = x.toLowerCase(); if (s[k]) return false; s[k] = 1; return true; }); }
+  var ADJS = uniq(LISTS.map(function(l){ return l.adj; })), KINDS = uniq(LISTS.map(function(l){ return l.kind; }));
+  function sing(t){ if (t.length > 3 && /ies$/.test(t)) return t.slice(0,-3) + "y"; if (t.length > 3 && /s$/.test(t) && !/ss$/.test(t)) return t.slice(0,-1); return t; }
+  function tokens(w){ return String(w).toLowerCase().replace(/[^a-z0-9$]+/g," ").trim().split(" ").filter(Boolean).map(sing); }
+  function norm(w){ return tokens(w).join(" "); }
+  LISTS.forEach(function(l, i){ l.id = i; l.tok = {}; tokens(l.adj + " " + l.kind + " " + l.kw).forEach(function(t){ l.tok[t] = 1; }); });
+  function find(a, k){ a = norm(a); k = norm(k); for (var i = 0; i < LISTS.length; i++) if (norm(LISTS[i].adj) === a && norm(LISTS[i].kind) === k) return LISTS[i]; return null; }
+  function tidy(w){ w = String(w).replace(/\s+/g," ").trim().slice(0,40); return w.charAt(0).toUpperCase() + w.slice(1); }
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function host(u){ try { return new URL(u).hostname.replace(/^www\./,""); } catch(e){ return ""; } }
+
+  $("count").textContent = LISTS.length.toLocaleString("en-US") + " lists";
+  $("adj-options").innerHTML = ADJS.map(function(w){ return '<option value="'+w+'"></option>'; }).join("");
+  $("kind-options").innerHTML = KINDS.map(function(w){ return '<option value="'+w+'"></option>'; }).join("");
+
+  // ----- saved (this device only) -----
+  var saved = [];
+  function keyOf(l){ return (l.adj + "|" + l.kind).toLowerCase(); }
+  var BYKEY = {}; LISTS.forEach(function(l){ BYKEY[keyOf(l)] = l; });
+  try { saved = JSON.parse(localStorage.getItem("tbo-saved-v2") || "[]").filter(function(k){ return BYKEY[k]; }); } catch(e) { saved = []; }
+  function persist(){ try { localStorage.setItem("tbo-saved-v2", JSON.stringify(saved)); } catch(e) {} }
+
+  // ----- reels -----
+  var measure = $("measure");
+  function widthOf(w){ measure.textContent = w || " "; return measure.getBoundingClientRect().width; }
+  var reels = [
+    { gum:$("gumA"), win:$("winA"), strip:$("stripA"), pool:ADJS, cur:"", dur:1400, extra:14 },
+    { gum:$("gumB"), win:$("winB"), strip:$("stripB"), pool:KINDS, cur:"", dur:1950, extra:20 }
+  ];
+  var current = null, colorIdx = [0,1], spinning = false;
+  function cells(words){ var f = document.createDocumentFragment(); words.forEach(function(w){ f.appendChild(el("span","cell",w)); }); return f; }
+  function setWidth(r, w){ r.win.style.width = Math.ceil(widthOf(w)) + "px"; }
+  function place(r, w){ r.cur = w; r.strip.textContent = ""; r.strip.appendChild(cells([w])); r.strip.style.transition = "none"; r.strip.style.transform = "translateY(0)"; setWidth(r, w); }
+  function land(r){ r.gum.classList.remove("land"); void r.gum.offsetWidth; r.gum.classList.add("land"); }
+  function newColors(){ var a = rand(4), b = (a + 1 + rand(3)) % 4; colorIdx = [a,b]; reels[0].gum.style.backgroundColor = COLORS[a]; reels[1].gum.style.backgroundColor = COLORS[b]; }
+  function roll(r, target, cb){
+    if (reduce) { place(r, target); cb(); return; }
+    var words = [r.cur]; for (var i = 0; i < r.extra; i++) words.push(r.pool[rand(r.pool.length)]); words.push(target);
+    r.strip.textContent = ""; r.strip.appendChild(cells(words));
+    r.strip.style.transition = "none"; r.strip.style.transform = "translateY(0)"; void r.strip.offsetHeight;
+    r.strip.style.transition = "transform " + r.dur + "ms cubic-bezier(.16,.84,.3,1.08)";
+    r.strip.style.transform = "translateY(-" + ((words.length - 1) * 1.15).toFixed(3) + "em)";
+    setTimeout(function(){ setWidth(r, target); }, r.dur * .55);
+    setTimeout(function(){ place(r, target); land(r); cb(); }, r.dur + 40);
+  }
+  function goTo(list){
+    if (spinning) return;
+    spinning = true; $("spin").disabled = true;
+    newColors();
+    var left = 2;
+    roll(reels[0], list.adj, done); roll(reels[1], list.kind, done);
+    function done(){ if (--left === 0) { spinning = false; $("spin").disabled = false; current = list; } }
+  }
+  function spin(){ var n; do { n = LISTS[rand(LISTS.length)]; } while (n === current); goTo(n); }
+
+  // ----- tabs -----
+  var tab = "spin";
+  function showTab(t){
+    tab = t;
+    ["spin","saved"].forEach(function(k){ $("s-" + k).hidden = k !== t; });
+    document.querySelectorAll(".tab").forEach(function(b){ if (b.getAttribute("data-tab") === t) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current"); });
+    if (t === "saved") renderSaved();
+    if (t === "spin") reels.forEach(function(r){ setWidth(r, r.cur); });
+  }
+  document.querySelectorAll(".tab").forEach(function(b){ b.addEventListener("click", function(){ closeDetail(); closeSheet(); showTab(b.getAttribute("data-tab")); }); });
+
+  function rowFor(l, k, onPick){
+    var b = el("button","row"); b.type = "button";
+    var t = el("span","t");
+    var c1 = el("span","chip",l.adj); c1.style.background = SOLID[k % 4];
+    var c2 = el("span","chip",l.kind); c2.style.background = SOLID[(k + 2) % 4];
+    t.appendChild(c1); t.appendChild(document.createTextNode(" ")); t.appendChild(c2);
+    b.appendChild(t); b.appendChild(el("span","arr","→"));
+    b.addEventListener("click", function(){ if (onPick) onPick(l); else openDetail(l); });
+    return b;
+  }
+  function renderSaved(){
+    var box = $("saved-list"); box.textContent = "";
+    $("saved-empty").hidden = saved.length > 0;
+    if (saved.length) { var wrap = el("div"); wrap.style.borderBottom = "1px solid var(--rule)"; saved.forEach(function(key, k){ wrap.appendChild(rowFor(BYKEY[key], k)); }); box.appendChild(wrap); }
+    var badge = $("badge"); badge.hidden = !saved.length; badge.textContent = saved.length;
+  }
+  $("go-spin").addEventListener("click", function(){ showTab("spin"); });
+
+  // ----- detail -----
+  var open = null;
+  function openDetail(l){
+    open = l;
+    var h = $("dtitle"); h.textContent = "";
+    h.appendChild(el("span", null, "The best of"));
+    [l.adj, l.kind].forEach(function(w, i){ var g = el("span","gum",w); g.style.backgroundColor = COLORS[(colorIdx[i] + (l === current ? 0 : l.id)) % 4]; h.appendChild(g); });
+    $("dwho").textContent = "For " + l.who.charAt(0).toLowerCase() + l.who.slice(1) + ".";
+    var cards = $("dcards"); cards.textContent = "";
+    l.picks.forEach(function(p, i){
+      var c = el("article","card"), hd = el("div","h");
+      hd.appendChild(el("span","n",String(i + 1).padStart(2,"0"))); hd.appendChild(el("h2",null,p.name));
+      c.appendChild(hd); c.appendChild(el("p",null,p.what));
+      var kv = el("div","kv"); kv.appendChild(el("span","lab",l.lab)); var v = el("span",null,p.best); v.style.fontSize = "14px"; v.style.lineHeight = "1.45"; kv.appendChild(v); c.appendChild(kv);
+      if (p.url) { var a = el("a",null,"Visit " + host(p.url) + " →"); a.href = p.url; a.target = "_blank"; a.rel = "noopener"; c.appendChild(a); }
+      cards.appendChild(c);
+    });
+    $("dnote").textContent = ((l.note ? l.note + " " : "") + "Picks are never paid for. Check each link before you sign up.");
+    syncSave();
+    $("dscroll").scrollTop = 0;
+    $("detail").classList.add("open"); $("detail").setAttribute("aria-hidden","false");
+  }
+  function closeDetail(){ $("detail").classList.remove("open"); $("detail").setAttribute("aria-hidden","true"); }
+  function syncSave(){ var on = open && saved.indexOf(keyOf(open)) >= 0; var b = $("save"); b.classList.toggle("on", !!on); b.setAttribute("aria-pressed", on ? "true" : "false"); b.setAttribute("aria-label", on ? "Remove from saved" : "Save this list"); $("save-path").setAttribute("fill", on ? "#0B0B0F" : "none"); }
+  $("save").addEventListener("click", function(){ if (!open) return; var k = saved.indexOf(keyOf(open)); if (k >= 0) saved.splice(k,1); else saved.push(keyOf(open)); persist(); syncSave(); renderSaved(); });
+  $("back").addEventListener("click", closeDetail);
+  $("dspin").addEventListener("click", function(){ closeDetail(); showTab("spin"); setTimeout(spin, 300); });
+  $("read").addEventListener("click", function(){ if (current) openDetail(current); });
+  $("spin").addEventListener("click", spin);
+
+  // ----- sheet -----
+  var NICHE = [["Wah wah.","Nobody has asked for “The best of {c}” yet. Respect. These are close:"],["Ooh, niche.","“The best of {c}” isn’t a list yet. You’re early. Try these:"],["Too niche (for now).","We haven’t written “The best of {c}” yet. Closest picks:"]];
+  var nt = 0;
+  function openSheet(focusB){
+    $("ia").value = reels[0].cur; $("ib").value = reels[1].cur;
+    $("sheet-form").hidden = false; $("sheet-miss").hidden = true;
+    $("scrim").classList.add("open"); $("sheet").classList.add("open"); $("sheet").setAttribute("aria-hidden","false");
+    setTimeout(function(){ var i = focusB ? $("ib") : $("ia"); i.focus(); i.select(); }, 380);
+  }
+  function closeSheet(){ $("scrim").classList.remove("open"); $("sheet").classList.remove("open"); $("sheet").setAttribute("aria-hidden","true"); }
+  reels[0].gum.addEventListener("click", function(){ if (!spinning) openSheet(false); });
+  reels[1].gum.addEventListener("click", function(){ if (!spinning) openSheet(true); });
+  $("scrim").addEventListener("click", closeSheet);
+  $("cancel").addEventListener("click", closeSheet);
+  $("retype").addEventListener("click", function(){ $("sheet-form").hidden = false; $("sheet-miss").hidden = true; $("ia").focus(); });
+  function recommend(a, b){
+    var kt = tokens(b), at = tokens(a), nk = norm(b);
+    var sc = LISTS.map(function(l){
+      var s = 0;
+      if (norm(l.kind) === nk) s += 6;
+      kt.forEach(function(t){ if (l.tok[t]) s += 3; else if (t.length > 3) { for (var k in l.tok) { if (k.length > 3 && (k.indexOf(t) === 0 || t.indexOf(k) === 0)) { s += 1.5; break; } } } });
+      at.forEach(function(t){ if (l.tok[t]) s += 1; });
+      return { l:l, s:s + Math.random()*.01 };
+    }).sort(function(x,y){ return y.s - x.s; });
+    var out = sc.filter(function(x){ return x.s >= 1; }).slice(0,3).map(function(x){ return x.l; });
+    while (out.length < 3) { var r = LISTS[rand(LISTS.length)]; if (out.indexOf(r) < 0) out.push(r); }
+    return out;
+  }
+  $("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var a = tidy($("ia").value), b = tidy($("ib").value);
+    if (!a || !b) return;
+    var hit = find(a, b);
+    if (hit) { closeSheet(); if (hit !== current) setTimeout(function(){ goTo(hit); }, 250); return; }
+    document.activeElement && document.activeElement.blur && document.activeElement.blur();
+    var line = NICHE[nt++ % NICHE.length];
+    $("wah-head").textContent = line[0];
+    $("wah-text").textContent = line[1].replace("{c}", a + " " + b);
+    var box = $("recs"); box.textContent = "";
+    var wrap = el("div"); wrap.style.borderBottom = "1px solid var(--rule)";
+    recommend(a, b).forEach(function(l, k){
+      wrap.appendChild(rowFor(l, k, function(x){ closeSheet(); setTimeout(function(){ goTo(x); }, 250); }));
+    });
+    box.appendChild(wrap);
+    $("sheet-form").hidden = true; $("sheet-miss").hidden = false;
+  });
+
+  // ----- gummy shelf -----
+  var PAL = { lemon:["#FFF8C2","#FFE62E","#B89400","#8A6E00"], pink:["#FFE0EC","#FF7AA8","#B83466","#8F1F49"], tomato:["#FFD0C4","#FF5A3C","#A8260F","#7A1A08"], leaf:["#DFFFDA","#6EE06B","#24852A","#155C1A"], cobalt:["#D6E0FF","#2B5CFF","#12298F","#0A1A66"] };
+  var BEAR = '<circle cx="31" cy="15" r="9"/><circle cx="69" cy="15" r="9"/><circle cx="50" cy="28" r="19"/><ellipse cx="50" cy="64" rx="22" ry="24"/><ellipse cx="27" cy="55" rx="8" ry="12" transform="rotate(30 27 55)"/><ellipse cx="73" cy="55" rx="8" ry="12" transform="rotate(-30 73 55)"/><circle cx="36" cy="87" r="10"/><circle cx="64" cy="87" r="10"/>';
+  var SHAPES = {
+    bear:{ body:function(){ return BEAR; }, hi:'<ellipse cx="42" cy="19" rx="8" ry="3.2" fill="#fff" opacity=".95" transform="rotate(-25 42 19)"/><ellipse cx="38" cy="56" rx="3" ry="9" fill="#fff" opacity=".6"/>', sp:[[40,48,1.3],[58,44,1],[56,62,1.4]], star:[60,66] },
+    star:{ body:function(id){ return '<polygon points="50,12 59.99,38.25 88.04,39.64 66.17,57.25 73.51,84.36 50,69 26.49,84.36 33.83,57.25 11.96,39.64 40.01,38.25" stroke="url(#g'+id+')" stroke-width="9" stroke-linejoin="round"/>'; }, hi:'<ellipse cx="44" cy="31" rx="6" ry="2.6" fill="#fff" opacity=".95" transform="rotate(-55 44 31)"/>', sp:[[40,50,1.2],[58,44,1],[56,60,1.4]], star:[52,48] },
+    sphere:{ body:function(){ return '<circle cx="50" cy="50" r="40"/>'; }, hi:'<ellipse cx="34" cy="28" rx="10" ry="4" fill="#fff" opacity=".95" transform="rotate(-35 34 28)"/>', sp:[[40,50,1.3],[58,44,1],[56,60,1.4]], star:[64,40] },
+    tri:{ body:function(id){ return '<polygon points="18,22 82,22 50,80" stroke="url(#g'+id+')" stroke-width="14" stroke-linejoin="round"/>'; }, hi:'<ellipse cx="34" cy="22" rx="10" ry="2.6" fill="#fff" opacity=".95"/>', sp:[[40,36,1.2],[58,34,1],[52,50,1.4]], star:[62,38] },
+    heart:{ body:function(){ return '<path d="M50 86 C20 66 8 48 14 32 C20 16 42 14 50 30 C58 14 80 16 86 32 C92 48 80 66 50 86 Z"/>'; }, hi:'<ellipse cx="28" cy="29" rx="8" ry="3.2" fill="#fff" opacity=".95" transform="rotate(-40 28 29)"/>', sp:[[40,50,1.3],[58,44,1],[56,60,1.4]], star:[68,36] }
+  };
+  function sparkle(x,y){ return '<path d="M'+x+' '+(y-5)+' L'+(x+1)+' '+(y-1)+' L'+(x+5)+' '+y+' L'+(x+1)+' '+(y+1)+' L'+x+' '+(y+5)+' L'+(x-1)+' '+(y+1)+' L'+(x-5)+' '+y+' L'+(x-1)+' '+(y-1)+' Z"/>'; }
+  function gummy(kind, pal, id, delay){
+    var s = SHAPES[kind], c = PAL[pal];
+    var dots = s.sp.map(function(p){ return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+p[2]+'"/>'; }).join("");
+    return '<svg class="gummy" viewBox="0 0 100 100" style="animation-delay:'+delay+'s"><defs><radialGradient id="g'+id+'" gradientUnits="userSpaceOnUse" cx="56" cy="60" r="56"><stop offset="0" stop-color="'+c[0]+'"/><stop offset=".5" stop-color="'+c[1]+'"/><stop offset="1" stop-color="'+c[2]+'"/></radialGradient><filter id="f'+id+'" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="b"/><feSpecularLighting in="b" surfaceScale="5" specularConstant="1.3" specularExponent="22" lighting-color="#ffffff" result="s"><fePointLight x="28" y="6" z="70"/></feSpecularLighting><feComposite in="s" in2="SourceAlpha" operator="in" result="si"/><feOffset in="SourceAlpha" dx="-3" dy="-4" result="o"/><feGaussianBlur in="o" stdDeviation="4" result="ob"/><feComposite in="SourceAlpha" in2="ob" operator="out" result="rim"/><feFlood flood-color="'+c[3]+'" flood-opacity=".55"/><feComposite in2="rim" operator="in" result="rc"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="rc"/><feMergeNode in="si"/></feMerge></filter></defs><g opacity=".7"><g filter="url(#f'+id+')" fill="url(#g'+id+')">'+s.body(id)+'</g></g>'+s.hi+'<g class="tw" fill="#fff" style="animation-delay:'+(delay+.4)+'s">'+dots+sparkle(s.star[0],s.star[1])+'</g></svg>';
+  }
+  var shelf = [["bear","lemon"],["star","pink"],["sphere","tomato"],["tri","leaf"],["heart","cobalt"],["bear","tomato"]];
+  $("shelf").innerHTML = shelf.map(function(p,i){ return gummy(p[0], p[1], "a"+i, -i*.37); }).join("");
+
+  // ----- start -----
+  var first = LISTS[rand(LISTS.length)];
+  reels[0].cur = first.adj; reels[1].cur = first.kind;
+  place(reels[0], first.adj); place(reels[1], first.kind); newColors(); current = first;
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ reels.forEach(function(r){ setWidth(r, r.cur); }); });
+  window.addEventListener("resize", function(){ reels.forEach(function(r){ setWidth(r, r.cur); }); });
+  renderSaved();
+})();
+</script>
+</body>
+</html>
