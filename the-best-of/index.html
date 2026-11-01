@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Best Of</title>
+<meta name="description" content="Spin the slot machine for the best startup ideas, side hustles, free courses and self-development routines. Free and open source, by LīMEN.">
+<meta name="theme-color" content="#F3F1EC">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Best Of">
+<meta property="og:description" content="Spin for the best startup ideas, side hustles, free courses and glow-up routines. By LīMEN.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+/* base reset (previously supplied by the artifact viewer) */
+*,*::before,*::after{box-sizing:border-box}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@500;700&display=swap">
+<style>
+/* Layout: one quiet paper screen, corner captions like a museum wall, one giant slot-machine line in the middle. Single deliberate light look (Sourcely brand kit). */
+:root{
+  --paper:#F3F1EC; --ink:#0B0B0F; --muted:#5E5C57; --rule:#C9C5BB;
+  --lemon:#FFE62E; --bubblegum:#FF7AA8; --tomato:#FF5A3C; --leaf:#6EE06B; --cobalt:#2B5CFF;
+  --display:'Bricolage Grotesque','Arial Black',Arial,sans-serif;
+  --body:'DM Sans','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;
+}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body)}
+a{color:var(--ink)}a:hover{color:var(--cobalt)}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:6px}
+.app{min-height:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:24px;padding-block:24px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.corners{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.cap{font:500 12px/1.45 var(--body);letter-spacing:.07em;text-transform:uppercase}
+.cap .dim{color:var(--muted)}
+.cap a{text-decoration:none}
+
+/* landing */
+.stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px;text-align:center;padding-block:24px}
+.line{margin:0;font-family:var(--display);font-weight:800;letter-spacing:-.035em;font-size:clamp(40px,7.6vw,116px);line-height:1.15;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.2em .24em;text-wrap:balance}
+.bob{display:inline-block;transform-origin:50% 100%;animation:jelly 3.4s ease-in-out infinite}
+.bob.b2{animation-delay:-1.7s}
+@keyframes jelly{0%,100%{transform:translateY(0) scale(1,1)}30%{transform:translateY(-.07em) scale(.97,1.04)}48%{transform:translateY(0) scale(1.05,.95)}60%{transform:translateY(-.015em) scale(.99,1.01)}74%{transform:translateY(0) scale(1.01,.99)}}
+
+.gum{position:relative;display:inline-block;border-radius:.44em;padding:0 .3em;transform-origin:50% 100%;transition:background-color .8s ease;
+  -webkit-backdrop-filter:blur(5px) saturate(1.7);backdrop-filter:blur(5px) saturate(1.7);
+  background-image:radial-gradient(ellipse 70% 60% at 62% 108%,rgba(255,255,255,.6),rgba(255,255,255,0) 70%),radial-gradient(ellipse 120% 95% at 50% 50%,rgba(255,255,255,0) 52%,rgba(11,11,15,.12) 100%);
+  box-shadow:inset 0 -.15em .26em rgba(11,11,15,.16),inset 0 .1em .22em rgba(255,255,255,.85),inset .07em 0 .16em rgba(255,255,255,.4),inset -.05em 0 .14em rgba(255,255,255,.3),inset 0 0 0 .025em rgba(255,255,255,.6),0 .22em .36em rgba(11,11,15,.12)}
+.gum::before{content:"";position:absolute;left:.15em;top:.07em;width:48%;height:.24em;border-radius:999px;background:linear-gradient(rgba(255,255,255,.98),rgba(255,255,255,.08));pointer-events:none;z-index:2}
+.gum::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;animation:tw 2.6s ease-in-out infinite;
+  background-image:radial-gradient(circle at 88% 22%,#fff 0 .035em,rgba(255,255,255,0) .075em),radial-gradient(circle at 78% 32%,rgba(255,255,255,.9) 0 .018em,rgba(255,255,255,0) .04em),radial-gradient(circle at 16% 72%,rgba(255,255,255,.95) 0 .022em,rgba(255,255,255,0) .05em),radial-gradient(circle at 40% 86%,rgba(255,255,255,.85) 0 .016em,rgba(255,255,255,0) .035em),radial-gradient(circle at 64% 64%,rgba(255,255,255,.8) 0 .014em,rgba(255,255,255,0) .03em),radial-gradient(circle at 28% 38%,rgba(255,255,255,.7) 0 .012em,rgba(255,255,255,0) .028em),radial-gradient(circle at 93% 80%,rgba(255,255,255,.85) 0 .018em,rgba(255,255,255,0) .04em),radial-gradient(circle at 54% 18%,rgba(255,255,255,.7) 0 .012em,rgba(255,255,255,0) .026em)}
+@keyframes tw{0%,100%{opacity:.35}50%{opacity:1}}
+.gum.land{animation:land .75s cubic-bezier(.3,1.5,.5,1)}
+@keyframes land{0%{transform:scale(1.14,.84)}30%{transform:scale(.92,1.1)}55%{transform:scale(1.05,.96)}78%{transform:scale(.99,1.02)}100%{transform:scale(1,1)}}
+.gum.editable{cursor:text}
+.gum.editable:hover{box-shadow:inset 0 -.15em .26em rgba(11,11,15,.16),inset 0 .1em .22em rgba(255,255,255,.85),inset 0 0 0 .035em rgba(11,11,15,.35),0 .22em .36em rgba(11,11,15,.12)}
+.gum:focus-within,.gum:focus-visible{outline:3px solid var(--cobalt);outline-offset:4px}
+.win{display:block;height:1.15em;overflow:hidden;transition:width .55s cubic-bezier(.3,1.4,.5,1)}
+.strip{display:block}
+.cell{display:block;height:1.15em;line-height:1.15em;white-space:nowrap;text-align:center}
+.edit{display:block;height:1.15em;line-height:1.15em;font:inherit;letter-spacing:inherit;color:var(--ink);background:transparent;border:0;padding:0;margin:0;text-align:center;outline:none;caret-color:var(--cobalt);position:relative;z-index:3}
+.edit::placeholder{color:rgba(11,11,15,.35)}
+.measure{position:absolute;visibility:hidden;white-space:pre;pointer-events:none;left:-9999px;top:0}
+
+.go{display:inline-flex;align-items:center;justify-content:center;width:1em;height:1em;border-radius:50%;background:var(--ink);text-decoration:none;cursor:pointer;border:0;padding:0;font-size:inherit;box-shadow:inset 0 -.08em .14em rgba(255,255,255,.2),inset 0 .06em .1em rgba(255,255,255,.25),0 .1em .2em rgba(11,11,15,.22);transition:transform .35s cubic-bezier(.3,1.6,.5,1),background-color .2s}
+.go:hover{transform:scale(1.08) rotate(-6deg);background:var(--cobalt)}
+.go svg{width:46%;height:46%}
+
+.hint{margin:-12px 0 0;font:500 14px var(--body);color:var(--muted);display:inline-flex;align-items:center;gap:8px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;border-radius:999px;font:700 18px var(--body);text-decoration:none;cursor:pointer;box-sizing:border-box;border:2px solid var(--ink);background:transparent;color:var(--ink);transition:transform .3s cubic-bezier(.3,1.6,.5,1),background-color .2s}
+.pill:hover{background:var(--lemon);color:var(--ink);transform:translateY(-2px)}
+.pill:active{transform:scale(.96)}
+.pill.ink{background:var(--ink);color:#fff;padding-right:8px}
+.pill.ink:hover{background:var(--ink);color:#fff}
+.pill .dot{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--lemon)}
+.pill[disabled]{opacity:.55;cursor:default;transform:none}
+
+/* niche panel */
+.niche{width:100%;max-width:760px;text-align:left;border-top:2px solid var(--ink);padding-top:22px;display:flex;flex-direction:column;gap:14px}
+.niche h2{margin:0;font:800 clamp(30px,4.4vw,48px)/1.02 var(--display);letter-spacing:-.03em;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.niche h2 .tag{font:700 13px var(--body);letter-spacing:.07em;text-transform:uppercase;background:var(--bubblegum);border-radius:999px;padding:6px 12px}
+.niche p{margin:0;font-size:17px;line-height:1.5;max-width:60ch}
+.recs{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column}
+.recs li{border-top:1px solid var(--rule)}
+.recs li:last-child{border-bottom:1px solid var(--rule)}
+.rec{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 4px;font:800 clamp(20px,2.6vw,28px)/1.15 var(--display);letter-spacing:-.02em}
+.rec .chip{display:inline-block;border-radius:.4em;padding:0 .24em;box-shadow:inset 0 -.1em .16em rgba(11,11,15,.14),inset 0 .08em .14em rgba(255,255,255,.8)}
+.rec .arr{flex:none;font:700 15px var(--body);color:var(--muted)}
+.rec:hover .arr{color:var(--ink)}
+.rec:focus-visible{outline:3px solid var(--cobalt)}
+
+.shelf{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
+.gummy{width:62px;height:62px;filter:drop-shadow(0 9px 10px rgba(11,11,15,.16));transform-origin:50% 100%;animation:jelly 3s ease-in-out infinite}
+.gummy:hover{animation:land .7s cubic-bezier(.3,1.5,.5,1)}
+.tw{animation:tw 2.2s ease-in-out infinite}
+
+/* article */
+.article{display:flex;flex-direction:column;gap:48px;max-width:1080px;width:100%;margin:0 auto}
+.article > .line{margin-top:40px}
+.meta{border-top:2px solid var(--ink);padding-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.lab{font:500 12px var(--body);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.val{font:500 16px/1.45 var(--body)}
+.kv{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pick{border-top:2px solid var(--ink);padding:26px 0 30px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:flex-start}
+.num{font:800 80px/.9 var(--display);letter-spacing:-.04em;flex:0 0 128px;font-variant-numeric:tabular-nums}
+.pick .body{flex:999 1 380px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.pick h2{margin:0;font:800 clamp(28px,3.4vw,40px)/1.05 var(--display);letter-spacing:-.03em}
+.pick p{margin:0;font-size:18px;line-height:1.55;max-width:62ch}
+.pick .row{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;border-top:1px solid var(--rule);padding-top:12px}
+.visit{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border:2px solid var(--ink);border-radius:999px;font:700 15px var(--body);text-decoration:none}
+.visit:hover{background:var(--lemon);color:var(--ink)}
+.note{font-size:14px;line-height:1.5;color:var(--muted);max-width:70ch}
+.queue{background:var(--ink);color:#fff;border-radius:28px;padding:40px clamp(24px,5vw,48px);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.queue h2{margin:0;font:800 clamp(28px,4vw,40px)/1.05 var(--display);letter-spacing:-.03em;color:#fff}
+.queue p{margin:8px 0 0;max-width:52ch;color:#E6E3DB;font-size:17px;line-height:1.5}
+.queue .pill{border-color:var(--lemon);background:var(--lemon);color:var(--ink)}
+
+@media (max-width:640px){.gummy{width:44px;height:44px}.num{font-size:60px;flex-basis:100%}.stage{gap:28px}.pill{font-size:16px}}
+@media (prefers-reduced-motion:reduce){.bob,.gummy,.gum::after,.tw,.gum.land{animation:none}.win{transition:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="corners">
+    <div class="cap"><a href="#"><strong>The Best Of.</strong></a><br><span class="dim">By LīMEN</span></div>
+    <div class="cap" style="text-align:right"><span>Free · Open source</span><br><span class="dim" id="list-count"></span></div>
+  </header>
+
+  <main class="stage" id="view-spin">
+    <h1 class="line">
+      <span>The best of</span>
+      <span class="bob"><span class="gum editable" id="gumA" tabindex="0" role="button" aria-label="Change the first word"><span class="win" id="winA"><span class="strip" id="stripA"></span></span><input class="edit" id="editA" hidden list="adj-options" autocomplete="off" spellcheck="false" aria-label="Type a describing word"></span></span>
+      <span class="bob b2"><span class="gum editable" id="gumB" tabindex="0" role="button" aria-label="Change the second word"><span class="win" id="winB"><span class="strip" id="stripB"></span></span><input class="edit" id="editB" hidden list="kind-options" autocomplete="off" spellcheck="false" aria-label="Type what you're looking for"></span></span>
+      <a href="#list" class="go" id="go" aria-label="Read this list"><svg viewBox="0 0 24 24" fill="none" stroke="#FFE62E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg></a>
+    </h1>
+    <p class="hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>Tap either word to type your own</p>
+    <div class="actions">
+      <button class="pill" id="spin" type="button">↻ Spin again</button>
+      <a href="#list" class="pill ink" id="read">Read the list <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0B0F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg></span></a>
+    </div>
+    <section class="niche" id="niche" hidden aria-live="polite">
+      <h2><span id="niche-head"></span><span class="tag">Niche taste</span></h2>
+      <p id="niche-text"></p>
+      <ul class="recs" id="recs"></ul>
+    </section>
+    <div class="shelf" id="shelf" aria-hidden="true"></div>
+  </main>
+
+  <main class="article" id="view-list" hidden>
+    <h1 class="line" id="list-title"></h1>
+    <section class="meta" aria-label="About this list">
+      <div class="kv"><span class="lab">Who it's for</span><span class="val" id="m-who"></span></div>
+      <div class="kv"><span class="lab">Picks</span><span class="val" id="m-count"></span></div>
+      <div class="kv"><span class="lab">How we picked</span><span class="val">Beginner-friendly, low-cost, easy to start this week</span></div>
+      <div class="kv"><span class="lab">Last checked</span><span class="val">November 2026</span></div>
+    </section>
+    <section id="picks" aria-label="Picks"></section>
+    <p class="note"><span id="list-note"></span> Picks are editorial and never paid for. Apps and courses change their plans often, so check each link before you sign up.</p>
+    <section class="queue">
+      <div><h2>Want another one?</h2><p>Spin for a new list, or type your own combo on the home screen.</p></div>
+      <a href="#" class="pill" id="respin">↻ Spin again</a>
+    </section>
+  </main>
+
+  <footer class="corners">
+    <div class="cap">A new list every day<br><span class="dim">Picks are never paid for</span></div>
+    <div class="cap" style="text-align:right"><span>© 2026 The Best Of</span><br><span class="dim">By LīMEN</span></div>
+  </footer>
+</div>
+<span class="line measure" id="measure" aria-hidden="true"></span>
+<datalist id="adj-options"></datalist>
+<datalist id="kind-options"></datalist>
+
+<script>
+(function(){
+  // ---------- curated lists ----------
+  function L(adj, kind, who, kw, picks, opt){ opt = opt || {}; return { adj:adj, kind:kind, who:who, kw:kw, lab:opt.lab || "Best for", note:opt.note || "", picks:picks.map(function(p){ return { name:p[0], url:p[1], what:p[2], best:p[3] }; }) }; }
+  var IDEA = { lab:"First step" };
+  var LISTS = [
+    // ---- startup ideas ----
+    L("Fast","Startup Ideas","People who want to launch in weeks, not months","startup startups business businesses idea ideas launch quick start company",[
+      ["Social media for local shops","","Run Instagram and TikTok for cafés, salons and gyms that don't have time to post.","Offer one shop a free month in exchange for a testimonial."],
+      ["Digital templates","","Sell Notion, Canva or spreadsheet templates that save people time.","Make one template you'd use yourself and list it on Gumroad or Etsy."],
+      ["CV and LinkedIn makeovers","","Rewrite résumés and profiles for students and job hunters.","Fix three friends' CVs for free, then post the before-and-afters."],
+      ["Print-on-demand merch","","Sell your designs on shirts and totes without holding any stock.","Make five designs and connect Printful to an Etsy shop."],
+      ["Neighborhood errand service","","Grocery runs, pet care and small jobs for busy neighbors.","Post in your local Facebook or WhatsApp group this week."]], IDEA),
+    L("Lucrative","Side Hustles","Anyone with evenings and weekends to spare","side hustle hustles extra income money earn freelance part time job jobs gig",[
+      ["Short-form video editing","","Creators and brands constantly need TikToks, Reels and Shorts edited.","You already edit videos for fun"],
+      ["UGC creator","","Brands pay creators to film product videos they use in ads.","You're comfortable on camera"],
+      ["Websites for small businesses","","Plenty of local businesses still need a simple, good-looking site.","You like design tools like Framer or Squarespace"],
+      ["Freelance copywriting","","Write product pages, emails and captions for brands.","You enjoy writing and can hit deadlines"],
+      ["Online tutoring","","Teach a school subject, a language or an instrument over video.","You're strong in one subject"],
+      ["Vintage reselling","","Buy underpriced pieces at thrift stores and resell them online.","You already love thrifting"]]),
+    L("Low-Cost","Business Ideas","Founders starting with almost no money","business businesses idea ideas cheap budget low cost startup money zero",[
+      ["Pet sitting and dog walking","","Trust and reliability matter more than equipment.","Sign up on a pet-care app or ask neighbors with dogs."],
+      ["Virtual assistant","","Handle inboxes, calendars and admin for busy founders.","List three tasks you could do today and pitch one founder."],
+      ["Event photography","","Birthdays, graduations and small events need someone who can shoot well.","Shoot a friend's event for free to build a portfolio."],
+      ["Car cleaning","","Interior and exterior cleans at people's homes.","Start with basic supplies and your family's cars as practice."],
+      ["Digital downloads","","Planners, guides and presets cost nothing to copy.","Turn something you already know into a one-page guide."]], IDEA),
+    L("Online","Business Ideas","People who want a business they can run from a laptop","online internet digital business businesses idea ideas laptop remote",[
+      ["Niche newsletter","","Become the go-to source for one specific topic.","Pick a topic you'd read about anyway and send issue one."],
+      ["Faceless YouTube channel","","Explainers, tutorials or compilations without showing your face.","Script and post three videos before judging the results."],
+      ["Mini online course","","Teach one specific skill people struggle with.","Pre-sell it to ten people before you record anything."],
+      ["Freelancing platforms","","Sell a skill on Fiverr or Upwork while you build a reputation.","Create one tightly focused gig instead of five vague ones."],
+      ["Etsy digital shop","","Printables, wall art and planners sell without shipping.","Research what's selling, then make your own better version."]], IDEA),
+    L("Creative","Business Ideas","Makers who want to turn a hobby into income","creative art arts craft crafts handmade hobby make maker design artist business idea ideas",[
+      ["Candles","","Scents, vessels and branding make each line feel different.","Make a test batch and gift it to friends for honest feedback."],
+      ["Stickers and prints","","Low-cost to produce and easy to ship.","Order a small batch of your best three designs."],
+      ["Custom pet portraits","","People love art of their pets, especially as gifts.","Draw two friends' pets and post the results."],
+      ["Handmade jewelry","","Beads, wire or clay pieces with a clear style.","Pick one style and make a small first collection."],
+      ["Crochet and knitwear","","Trendy pieces and plushies sell well online.","Film your process; making-of videos sell the product."]], IDEA),
+    L("Student","Business Ideas","Students fitting a business around classes","student students school college university campus teen business idea ideas young",[
+      ["Tutoring younger students","","Parents pay well for patient, relatable tutors.","Tell your school's parent groups you're available."],
+      ["Campus merch","","Clubs, teams and events all want custom merch.","Pitch one club and use print-on-demand to avoid stock."],
+      ["Study note templates","","Clean, well-organized notes and templates sell to classmates.","Package your best notes or a Notion study system."],
+      ["Moving and dorm help","","Move-in and move-out weeks are hectic for everyone.","Team up with a friend and post an offer on campus groups."],
+      ["Tech help for older adults","","Phone, laptop and app setup for people who find it confusing.","Offer your help through a local community center."]], IDEA),
+    L("Sustainable","Business Ideas","Founders who want profit and less waste","sustainable sustainability eco green environment planet recycle recycled upcycle upcycling zero waste business idea ideas",[
+      ["Upcycled clothing","","Rework thrifted pieces into new, one-off designs.","Upcycle three pieces and list them on Depop or Vinted."],
+      ["Repair service","","Fix clothes, bikes or phones so they don't get thrown away.","Offer repairs to friends first and track how long each takes."],
+      ["Plant propagation shop","","Grow cuttings from your own plants and sell them.","Propagate a few easy plants and sell at a local market."],
+      ["Furniture restoration","","Restore secondhand furniture and resell it.","Start with one free or cheap piece from a local listing."],
+      ["Refill products","","Sell cleaning or beauty products in refillable containers.","Check the regulations in your country before selling anything you mix."]], IDEA),
+    L("AI-Powered","Business Ideas","People who want to build with AI tools","ai artificial intelligence chatgpt claude automation business idea ideas tech",[
+      ["Content studio for small brands","","Use AI to speed up drafting, then edit carefully for quality.","Offer a week of posts to one local business."],
+      ["Automation setup","","Connect tools with Zapier or Make so small teams save hours.","Automate one boring task in your own life first."],
+      ["AI help for local businesses","","Set up FAQ chatbots and email templates for shops.","Map one shop's top ten customer questions."],
+      ["Custom GPTs and prompt packs","","Package useful workflows for one niche, like realtors or tutors.","Interview someone in the niche about their worst weekly task."]], IDEA),
+
+    // ---- learning ----
+    L("Free","Online Courses","Anyone learning business skills from scratch","learn learning course courses class classes education skills school study online",[
+      ["Startup School","https://www.startupschool.org","Free startup course from Y Combinator.","Tech and app founders"],
+      ["HubSpot Academy","https://academy.hubspot.com","Free courses on marketing, sales and social media.","Marketing basics"],
+      ["Grow with Google","https://grow.google","Free training on digital skills and getting found online.","Online presence"],
+      ["CS50","https://cs50.harvard.edu","Harvard's famous intro to computer science, free online.","Learning to think like a programmer"],
+      ["Coursera","https://www.coursera.org","University courses, many free to audit.","Going deep on one topic"]]),
+    L("Free","Coding Courses","Beginners who want to build their own apps and sites","code coding programming developer development web app apps javascript python computer",[
+      ["freeCodeCamp","https://www.freecodecamp.org","Free, project-based curriculum for web development and more.","Learning by building"],
+      ["The Odin Project","https://www.theodinproject.com","Free full-stack web development path.","Becoming job-ready"],
+      ["CS50","https://cs50.harvard.edu","Harvard's intro to computer science.","Strong fundamentals"],
+      ["Khan Academy","https://www.khanacademy.org/computing","Gentle, interactive coding lessons.","Total beginners"]]),
+    L("Free","Marketing Courses","Founders who need customers, not just a product","marketing market ads advertising social media seo growth customers brand branding",[
+      ["HubSpot Academy","https://academy.hubspot.com","Inbound marketing, email and content courses with certificates.","Marketing fundamentals"],
+      ["Google Skillshop","https://skillshop.withgoogle.com","Official training for Google Ads and Analytics.","Running ads"],
+      ["Semrush Academy","https://www.semrush.com/academy/","Free SEO and content marketing courses.","Getting found on Google"],
+      ["Meta Blueprint","https://www.facebook.com/business/learn","Official training for Instagram and Facebook ads.","Social ads"]]),
+    L("Free","Money Lessons","Anyone who wants to understand money before making it","money finance financial finances personal budget budgeting invest investing saving savings",[
+      ["Khan Academy Personal Finance","https://www.khanacademy.org/college-careers-more/personal-finance","Short lessons on budgeting, credit, taxes and investing.","The basics"],
+      ["Investopedia","https://www.investopedia.com","Plain-language explanations of financial terms.","Looking things up"],
+      ["r/personalfinance wiki","https://www.reddit.com/r/personalfinance/wiki/index","Community-built guides to budgeting and saving.","Step-by-step plans"]], { note:"Educational only, not financial advice." }),
+    L("Free","Language Apps","Anyone learning a language for travel, work or fun","language languages learn speak speaking english spanish italian french app apps",[
+      ["Duolingo","https://www.duolingo.com","Game-like daily lessons in dozens of languages.","Building a daily habit"],
+      ["Language Transfer","https://www.languagetransfer.org","Free audio courses that teach you to think in the language.","Understanding grammar"],
+      ["Tandem","https://www.tandem.net","Chat with native speakers learning your language.","Real conversation"],
+      ["HelloTalk","https://www.hellotalk.com","Language exchange app with built-in correction tools.","Texting practice"]]),
+
+    // ---- media ----
+    L("Underrated","YouTube Channels","Founders who learn best by watching","youtube channel channels video videos watch creators learn",[
+      ["Y Combinator","https://www.youtube.com/@ycombinator","Talks and advice from the startup accelerator's partners.","Startup fundamentals"],
+      ["Starter Story","https://www.youtube.com/@starterstory","Founders break down how their businesses make money.","Real business ideas"],
+      ["Ali Abdaal","https://www.youtube.com/@aliabdaal","Productivity and building an online business.","Creators and productivity"],
+      ["Colin and Samir","https://www.youtube.com/@ColinandSamir","Interviews and analysis about the creator economy.","Aspiring creators"]]),
+    L("Inspiring","Podcasts","Founders who want stories on the commute","podcast podcasts listen listening audio stories founders inspiration",[
+      ["How I Built This","https://www.npr.org/podcasts/510313/how-i-built-this","Founders tell how their companies began.","Origin stories"],
+      ["My First Million","https://www.mfmpod.com","Two hosts riff on business ideas and trends.","Idea generation"],
+      ["Founders","https://www.founderspodcast.com","Each episode breaks down a biography of a famous founder.","Learning from history"],
+      ["Acquired","https://www.acquired.fm","Deep dives into how big companies were built.","Long weekend listens"]]),
+    L("Life-Changing","Books","Anyone ready to work on themselves","book books reading read self development self help growth mindset habits",[
+      ["Atomic Habits","","James Clear on building small habits that compound.","Changing routines"],
+      ["Deep Work","","Cal Newport on focusing in a distracted world.","Getting serious work done"],
+      ["Mindset","","Carol Dweck on fixed versus growth mindsets.","Handling failure"],
+      ["The Psychology of Money","","Morgan Housel on how behavior shapes wealth.","Thinking about money"],
+      ["Show Your Work!","https://austinkleon.com/show-your-work/","Austin Kleon on sharing your process to build an audience.","Creators"]]),
+    L("Must-Read","Startup Books","Founders who'd rather learn from a book","book books startup startups business founder founders entrepreneur reading read",[
+      ["The Mom Test","https://www.momtestbook.com","How to ask customers questions that get honest answers.","Testing an idea"],
+      ["The $100 Startup","","Real stories of businesses started with very little money.","Bootstrappers"],
+      ["Zero to One","","Peter Thiel on building something new.","Big-picture thinking"],
+      ["Company of One","","Paul Jarvis on staying small on purpose.","Solo founders"],
+      ["Shoe Dog","","Phil Knight's memoir of starting Nike.","Motivation"]]),
+
+    // ---- self-development ----
+    L("Glowing","Skin Routines","Anyone who wants calmer, healthier-looking skin","skin skincare glow glowing face routine routines beauty acne glow up selfcare self care",[
+      ["Gentle cleanser","","Wash with a mild cleanser instead of harsh scrubs that strip your skin.","Cleanse at night; a splash of water may be enough in the morning."],
+      ["Moisturizer","","Even oily skin does better when it isn't dehydrated.","Pick a fragrance-free one if your skin is sensitive."],
+      ["Daily sunscreen","","Broad-spectrum SPF 30 or higher is the step dermatologists stress most.","Apply every morning, even when it's cloudy."],
+      ["One active at a time","","Ingredients like vitamin C or retinoids help, but too many at once cause irritation.","Patch test first and add one product every few weeks."],
+      ["Sleep and hands off","","Rest and not picking at spots do more than most products.","Change pillowcases often and keep your hands off your face."]],
+      { lab:"How to do it", note:"General skincare tips, not medical advice. See a dermatologist for acne, rashes or anything that worries you." }),
+    L("Simple","Morning Routines","Anyone who wants calmer, more focused mornings","morning mornings routine routines wake up habits day start productive productivity",[
+      ["Same wake-up time","","A consistent time makes waking up easier over the week.","Pick a time you can keep on weekends too."],
+      ["Daylight early","","Getting outside light soon after waking helps you feel alert.","Drink your coffee by a window or take a short walk."],
+      ["Phone-free start","","Skipping your feed first thing keeps your head clear.","Charge your phone outside the bedroom."],
+      ["Move a little","","A few minutes of stretching or a walk wakes your body up.","Keep it small enough that you'll do it daily."],
+      ["Pick three priorities","","Decide what actually matters today before the day decides for you.","Write them on paper before opening email."]], { lab:"Try" }),
+    L("Effective","Study Techniques","Students and self-learners who want to remember more","study studying learn learning exam exams memory remember school revision technique techniques",[
+      ["Active recall","","Test yourself instead of rereading notes.","Close the book and write down everything you remember."],
+      ["Spaced repetition","","Review just before you'd forget, at growing intervals.","Use a flashcard app like Anki."],
+      ["Pomodoro technique","","Short focused sessions with breaks in between.","Try 25 minutes on, 5 minutes off."],
+      ["Feynman technique","","Explain the idea simply, as if teaching a kid.","Wherever you get stuck is what to study next."],
+      ["Interleaving","","Mix related topics in one session instead of blocking them.","Alternate between problem types when practicing."]], { lab:"Try" }),
+    L("Free","Productivity Apps","Anyone with big plans and a messy brain","productivity productive apps app planning plan organize organizing tasks task notes todo focus",[
+      ["Notion","https://www.notion.so","Docs, databases and to-dos in one workspace.","A life or business HQ"],
+      ["Todoist","https://todoist.com","Fast to-do app with a free plan.","Daily tasks"],
+      ["Obsidian","https://obsidian.md","Notes stored on your device and linked like a personal wiki.","Thinking and journaling"],
+      ["Trello","https://trello.com","Drag cards across boards to track work.","Visual planning"],
+      ["Google Calendar","https://calendar.google.com","Block time for your priorities, not just meetings.","Time blocking"]]),
+    L("Healthy","Habits","Anyone building a stronger daily foundation","healthy health habit habits wellness wellbeing sleep lifestyle routine selfcare self care",[
+      ["Consistent sleep","","Regular bed and wake times make everything else easier.","Set a bedtime alarm, not just a morning one."],
+      ["Daily walks","","Easy movement helps your body and your mood.","Take calls or podcasts on foot."],
+      ["Water within reach","","It's easier to drink enough when it's always nearby.","Keep a bottle on your desk."],
+      ["Less doomscrolling","","Endless feeds eat time and attention.","Use screen-time limits on your most addictive apps."],
+      ["A few lines of journaling","","Writing things down helps you notice patterns.","Note one win and one lesson each night."]], { lab:"Try", note:"General wellness tips, not medical advice." }),
+    L("Free","Fitness Apps","Anyone who wants to move more without a gym bill","fitness fit workout workouts exercise gym training run running yoga sport health",[
+      ["Nike Training Club","https://www.nike.com/ntc-app","Free guided workouts for all levels.","Home workouts"],
+      ["NHS Couch to 5K","https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/","Free plan that takes beginners to running 5K.","New runners"],
+      ["Yoga With Adriene","https://www.youtube.com/@yogawithadriene","Free yoga videos for every level.","Flexibility and calm"],
+      ["Strava","https://www.strava.com","Track runs and rides, with a free tier and a social feed.","Staying motivated"]]),
+    L("Free","Calming Apps","Anyone who wants a calmer head","calm calming meditation meditate mindfulness stress anxiety relax relaxing sleep mental",[
+      ["Insight Timer","https://insighttimer.com","Huge free library of guided meditations.","Variety"],
+      ["Medito","https://meditofoundation.org","Nonprofit meditation app that's completely free.","No paywalls"],
+      ["UCLA Mindful","https://www.uclahealth.org/programs/marc/free-guided-meditations","Free guided meditations from UCLA.","Short, simple sessions"]],
+      { note:"These are for everyday stress. If you're struggling, please reach out to a doctor or a mental health professional." }),
+    L("Smart","Money Habits","Young founders keeping their own finances healthy","money finance finances saving save savings budget budgeting habit habits debt bank",[
+      ["Pay yourself first","","Move savings out the moment income arrives.","Set an automatic transfer on payday."],
+      ["Emergency fund","","A cash cushion keeps one bad month from becoming a crisis.","Start with a small, reachable goal."],
+      ["Track spending","","You can't change what you don't measure.","Review a month of bank statements by category."],
+      ["Separate business money","","Mixing personal and business money makes taxes messy.","Open a separate account once you earn regularly."],
+      ["Avoid high-interest debt","","Credit card interest wipes out side-hustle profits.","Pay cards off in full each month."]], { lab:"Try", note:"Educational only, not financial advice." }),
+    L("Bold","Networking Tips","Anyone shy about meeting people who could help","network networking people connections contacts mentor mentors meet meeting events confidence linkedin",[
+      ["Be specific when you reach out","","Say exactly what you liked about someone's work and one clear ask.","Send one thoughtful message this week."],
+      ["Go to small events","","Small meetups make real conversations easier than big conferences.","Search Meetup or Eventbrite for one local event."],
+      ["Share your work publicly","","Posting what you're building brings people to you.","Post one update about your project."],
+      ["Help first","","Offering something useful builds trust fast.","Share a resource or intro without asking for anything."],
+      ["Follow up","","Most connections fade because nobody follows up.","Message people within two days of meeting them."]], { lab:"Try" }),
+
+    // ---- tools ----
+    L("Smart","AI Tools","Solo founders who need a tireless assistant","ai artificial intelligence chatgpt assistant write writing research automation chatbot tools",[
+      ["ChatGPT","https://chatgpt.com","General-purpose assistant for writing, ideas and analysis.","Brainstorming"],
+      ["Claude","https://claude.ai","Assistant that's strong at long documents, writing and building pages.","Writing and planning"],
+      ["Perplexity","https://www.perplexity.ai","AI search that shows its sources.","Research"],
+      ["Canva Magic Studio","https://www.canva.com/magic/","AI image and design features inside Canva.","Quick visuals"]]),
+    L("Free","Design Tools","Anyone making logos, posts and flyers without a designer","design designer logo graphic graphics brand branding flyer poster art illustration tools",[
+      ["Canva","https://www.canva.com","Drag-and-drop templates for posts, logos, decks and flyers.","Social posts and quick branding"],
+      ["Figma","https://www.figma.com","Pro-level design tool with a free starter plan.","Logos, websites and app mockups"],
+      ["Photopea","https://www.photopea.com","Photoshop-style editor in the browser, free with ads.","Photo edits and mockups"],
+      ["Adobe Express","https://www.adobe.com/express/","Templates plus quick tricks like background removal.","Content in lots of sizes"]]),
+    L("Budget","Website Builders","First-timers who need a site this weekend","website websites site web landing page portfolio online builder tools",[
+      ["Carrd","https://carrd.co","One-page sites with a free plan and cheap upgrades.","Landing pages and link pages"],
+      ["Framer","https://www.framer.com","Design-led site builder with animations built in.","Good-looking brand sites"],
+      ["Squarespace","https://www.squarespace.com","Polished templates with built-in selling and booking.","Portfolios and small shops"],
+      ["Wix","https://www.wix.com","Huge template library and drag-and-drop editor.","Service businesses"]]),
+    L("Free","Communities","Founders who want people to build alongside","community communities network founders friends people forum forums support",[
+      ["Indie Hackers","https://www.indiehackers.com","Founders sharing revenue, lessons and progress.","Bootstrapped online businesses"],
+      ["Product Hunt","https://www.producthunt.com","Launch platform and community for new products.","Launch day"],
+      ["r/smallbusiness","https://www.reddit.com/r/smallbusiness/","Big Reddit community for practical small-business questions.","Everyday questions"],
+      ["r/Entrepreneur","https://www.reddit.com/r/Entrepreneur/","Reddit community for founders of all kinds.","Ideas and feedback"]])
+  ];
+
+  // ---------- helpers ----------
+  var $ = function(id){ return document.getElementById(id); };
+  var rand = function(n){ return Math.floor(Math.random()*n); };
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var COLORS = ["rgba(255,230,46,.5)","rgba(255,122,168,.5)","rgba(255,90,60,.48)","rgba(110,224,107,.5)"];
+  var SOLID = ["rgba(255,230,46,.75)","rgba(255,122,168,.7)","rgba(255,90,60,.6)","rgba(110,224,107,.7)"];
+  function uniq(a){ var s = {}; return a.filter(function(x){ var k = x.toLowerCase(); if (s[k]) return false; s[k] = 1; return true; }); }
+  var ADJS = uniq(LISTS.map(function(l){ return l.adj; }));
+  var KINDS = uniq(LISTS.map(function(l){ return l.kind; }));
+  function sing(t){ if (t.length > 3 && /ies$/.test(t)) return t.slice(0,-3) + "y"; if (t.length > 3 && /s$/.test(t) && !/ss$/.test(t)) return t.slice(0,-1); return t; }
+  function tokens(w){ return String(w).toLowerCase().replace(/[^a-z0-9$]+/g," ").trim().split(" ").filter(Boolean).map(sing); }
+  function norm(w){ return tokens(w).join(" "); }
+  LISTS.forEach(function(l, i){ l.id = i; l.tok = {}; tokens(l.kind + " " + l.kw).forEach(function(t){ l.tok[t] = 1; }); });
+  function find(adj, kind){ var a = norm(adj), k = norm(kind); for (var i = 0; i < LISTS.length; i++) if (norm(LISTS[i].adj) === a && norm(LISTS[i].kind) === k) return LISTS[i]; return null; }
+  function tidy(w){ w = String(w).replace(/\s+/g," ").trim().slice(0,40); return w.charAt(0).toUpperCase() + w.slice(1); }
+
+  $("list-count").textContent = LISTS.length + " lists and counting";
+  $("adj-options").innerHTML = ADJS.map(function(w){ return '<option value="'+w+'"></option>'; }).join("");
+  $("kind-options").innerHTML = KINDS.map(function(w){ return '<option value="'+w+'"></option>'; }).join("");
+
+  var measure = $("measure");
+  function widthOf(word){ measure.textContent = word || " "; return measure.getBoundingClientRect().width; }
+
+  var reels = [
+    { key:"adj", gum:$("gumA"), win:$("winA"), strip:$("stripA"), edit:$("editA"), pool:ADJS, cur:"", dur:1500, extra:16 },
+    { key:"kind", gum:$("gumB"), win:$("winB"), strip:$("stripB"), edit:$("editB"), pool:KINDS, cur:"", dur:2100, extra:22 }
+  ];
+  var current = null, colorIdx = [0,1];
+
+  function cells(words){ var f = document.createDocumentFragment(); words.forEach(function(w){ var s = document.createElement("span"); s.className = "cell"; s.textContent = w; f.appendChild(s); }); return f; }
+  function setWidth(r, w){ r.win.style.width = Math.ceil(widthOf(w)) + "px"; }
+  function place(r, word){ r.cur = word; r.strip.textContent = ""; r.strip.appendChild(cells([word])); r.strip.style.transition = "none"; r.strip.style.transform = "translateY(0)"; setWidth(r, word); }
+  function land(r){ r.gum.classList.remove("land"); void r.gum.offsetWidth; r.gum.classList.add("land"); }
+  function newColors(){ var a = rand(4), b = (a + 1 + rand(3)) % 4; colorIdx = [a,b]; reels[0].gum.style.backgroundColor = COLORS[a]; reels[1].gum.style.backgroundColor = COLORS[b]; }
+
+  function roll(r, target, cb){
+    if (reduce) { place(r, target); cb(); return; }
+    var words = [r.cur];
+    for (var i = 0; i < r.extra; i++) words.push(r.pool[rand(r.pool.length)]);
+    words.push(target);
+    r.strip.textContent = ""; r.strip.appendChild(cells(words));
+    r.strip.style.transition = "none"; r.strip.style.transform = "translateY(0)";
+    void r.strip.offsetHeight;
+    r.strip.style.transition = "transform " + r.dur + "ms cubic-bezier(.16,.84,.3,1.08)";
+    r.strip.style.transform = "translateY(-" + ((words.length - 1) * 1.15).toFixed(3) + "em)";
+    setTimeout(function(){ setWidth(r, target); }, r.dur * .55);
+    setTimeout(function(){ place(r, target); land(r); cb(); }, r.dur + 40);
+  }
+
+  var spinning = false;
+  function goTo(list){
+    if (spinning) return;
+    spinning = true; $("spin").disabled = true;
+    stopEdit(reels[0], false); stopEdit(reels[1], false);
+    newColors();
+    var left = 2;
+    roll(reels[0], list.adj, done); roll(reels[1], list.kind, done);
+    function done(){ if (--left === 0) { spinning = false; $("spin").disabled = false; setFound(list); } }
+  }
+  function spin(){
+    var next; do { next = LISTS[rand(LISTS.length)]; } while (LISTS.length > 1 && next === current);
+    goTo(next);
+  }
+
+  // ---------- found / niche ----------
+  var NICHE = [
+    ["Wah wah.", "Nobody has asked for “The best of {c}” yet. Respect. While we catch up, these are close:"],
+    ["Ooh, niche.", "“The best of {c}” isn’t a list yet. You’re early. Try one of these instead:"],
+    ["Too niche (for now).", "We haven’t written “The best of {c}” yet. Here’s what’s closest:"],
+    ["Wah wah. Taste level: rare.", "“The best of {c}” is off the menu today. These hit nearby:"]
+  ];
+  var nicheTurn = 0;
+  function setFound(list){
+    current = list;
+    $("niche").hidden = true;
+    $("go").hidden = false; $("read").hidden = false;
+  }
+  function recommend(adj, kind){
+    var kt = tokens(kind), at = tokens(adj), nk = norm(kind), na = norm(adj);
+    var scored = LISTS.map(function(l){
+      var s = 0;
+      if (norm(l.kind) === nk) s += 6;
+      if (norm(l.adj) === na) s += 1.5;
+      kt.forEach(function(t){ if (l.tok[t]) s += 3; else if (t.length > 3) { for (var k in l.tok) { if (k.length > 3 && (k.indexOf(t) === 0 || t.indexOf(k) === 0)) { s += 1.5; break; } } } });
+      at.forEach(function(t){ if (l.tok[t]) s += 1; });
+      return { l:l, s:s + Math.random()*.01 };
+    }).sort(function(a,b){ return b.s - a.s; });
+    var out = scored.filter(function(x){ return x.s >= 1; }).slice(0,4).map(function(x){ return x.l; });
+    while (out.length < 3) { var r = LISTS[rand(LISTS.length)]; if (out.indexOf(r) < 0) out.push(r); }
+    return out;
+  }
+  function setMiss(adj, kind){
+    current = null;
+    $("go").hidden = true; $("read").hidden = true;
+    var line = NICHE[nicheTurn++ % NICHE.length];
+    $("niche-head").textContent = line[0];
+    $("niche-text").textContent = line[1].replace("{c}", adj + " " + kind);
+    var ul = $("recs"); ul.textContent = "";
+    recommend(adj, kind).forEach(function(l, i){
+      var li = document.createElement("li");
+      var b = document.createElement("button"); b.type = "button"; b.className = "rec";
+      var t = document.createElement("span");
+      t.appendChild(document.createTextNode("The best of "));
+      var c1 = document.createElement("span"); c1.className = "chip"; c1.style.background = SOLID[i % 4]; c1.textContent = l.adj;
+      var c2 = document.createElement("span"); c2.className = "chip"; c2.style.background = SOLID[(i + 2) % 4]; c2.textContent = l.kind;
+      t.appendChild(c1); t.appendChild(document.createTextNode(" ")); t.appendChild(c2);
+      var arr = document.createElement("span"); arr.className = "arr"; arr.textContent = "Try it →";
+      b.appendChild(t); b.appendChild(arr);
+      b.addEventListener("click", function(){ goTo(l); window.scrollTo({ top:0, behavior: reduce ? "auto" : "smooth" }); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+    $("niche").hidden = false;
+  }
+  function resolve(){
+    var l = find(reels[0].cur, reels[1].cur);
+    if (l) { place(reels[0], l.adj); place(reels[1], l.kind); setFound(l); }
+    else setMiss(reels[0].cur, reels[1].cur);
+  }
+
+  // ---------- editing ----------
+  function startEdit(r){
+    if (spinning || !r.edit.hidden) return;
+    r.win.hidden = true; r.edit.hidden = false;
+    r.edit.value = r.cur; r.edit.placeholder = r.key === "adj" ? "Adjective" : "Thing";
+    r.edit.style.width = Math.max(Math.ceil(widthOf(r.cur)), Math.ceil(widthOf("Thing"))) + "px";
+    r.edit.focus(); r.edit.select();
+  }
+  function stopEdit(r, commit){
+    if (r.edit.hidden) return;
+    var v = tidy(r.edit.value);
+    r.edit.hidden = true; r.win.hidden = false;
+    if (commit && v && norm(v) !== norm(r.cur)) { place(r, v); land(r); resolve(); }
+    r.gum.focus({ preventScroll:true });
+  }
+  reels.forEach(function(r){
+    r.gum.addEventListener("click", function(e){ if (e.target !== r.edit) startEdit(r); });
+    r.gum.addEventListener("keydown", function(e){ if (e.target === r.gum && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); startEdit(r); } });
+    r.edit.addEventListener("input", function(){ r.edit.style.width = Math.max(Math.ceil(widthOf(r.edit.value)), Math.ceil(widthOf("Thing"))) + "px"; });
+    r.edit.addEventListener("keydown", function(e){
+      if (e.key === "Enter") { e.preventDefault(); stopEdit(r, true); }
+      else if (e.key === "Escape") { e.preventDefault(); stopEdit(r, false); }
+    });
+    r.edit.addEventListener("blur", function(){ setTimeout(function(){ if (document.activeElement !== r.edit) stopEdit(r, true); }, 120); });
+  });
+
+  // ---------- start ----------
+  var first = LISTS[rand(LISTS.length)];
+  place(reels[0], first.adj); place(reels[1], first.kind); newColors(); setFound(first);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ reels.forEach(function(r){ setWidth(r, r.cur); }); });
+  window.addEventListener("resize", function(){ reels.forEach(function(r){ setWidth(r, r.cur); }); });
+  $("spin").addEventListener("click", spin);
+
+  // ---------- gummy shelf ----------
+  var PAL = {
+    lemon:["#FFF8C2","#FFE62E","#B89400","#8A6E00"], pink:["#FFE0EC","#FF7AA8","#B83466","#8F1F49"],
+    tomato:["#FFD0C4","#FF5A3C","#A8260F","#7A1A08"], leaf:["#DFFFDA","#6EE06B","#24852A","#155C1A"],
+    cobalt:["#D6E0FF","#2B5CFF","#12298F","#0A1A66"]
+  };
+  var BEAR = '<circle cx="31" cy="15" r="9"/><circle cx="69" cy="15" r="9"/><circle cx="50" cy="28" r="19"/><ellipse cx="50" cy="64" rx="22" ry="24"/><ellipse cx="27" cy="55" rx="8" ry="12" transform="rotate(30 27 55)"/><ellipse cx="73" cy="55" rx="8" ry="12" transform="rotate(-30 73 55)"/><circle cx="36" cy="87" r="10"/><circle cx="64" cy="87" r="10"/>';
+  var SHAPES = {
+    bear:{ body:function(){ return BEAR; }, hi:'<ellipse cx="42" cy="19" rx="8" ry="3.2" fill="#fff" opacity=".95" transform="rotate(-25 42 19)"/><ellipse cx="38" cy="56" rx="3" ry="9" fill="#fff" opacity=".6"/>', sp:[[40,48,1.3],[58,44,1],[56,62,1.4],[46,74,.9]], star:[60,66] },
+    star:{ body:function(id){ return '<polygon points="50,12 59.99,38.25 88.04,39.64 66.17,57.25 73.51,84.36 50,69 26.49,84.36 33.83,57.25 11.96,39.64 40.01,38.25" stroke="url(#g'+id+')" stroke-width="9" stroke-linejoin="round"/>'; }, hi:'<ellipse cx="44" cy="31" rx="6" ry="2.6" fill="#fff" opacity=".95" transform="rotate(-55 44 31)"/>', sp:[[40,50,1.2],[58,44,1],[56,60,1.4],[46,62,.9]], star:[52,48] },
+    sphere:{ body:function(){ return '<circle cx="50" cy="50" r="40"/>'; }, hi:'<ellipse cx="34" cy="28" rx="10" ry="4" fill="#fff" opacity=".95" transform="rotate(-35 34 28)"/><ellipse cx="70" cy="74" rx="8" ry="3" fill="#fff" opacity=".4" transform="rotate(-40 70 74)"/>', sp:[[40,50,1.3],[58,44,1],[56,60,1.4],[46,66,.9]], star:[64,40] },
+    tri:{ body:function(id){ return '<polygon points="18,22 82,22 50,80" stroke="url(#g'+id+')" stroke-width="14" stroke-linejoin="round"/>'; }, hi:'<ellipse cx="34" cy="22" rx="10" ry="2.6" fill="#fff" opacity=".95"/>', sp:[[40,36,1.2],[58,34,1],[52,50,1.4],[48,62,.9]], star:[62,38] },
+    heart:{ body:function(){ return '<path d="M50 86 C20 66 8 48 14 32 C20 16 42 14 50 30 C58 14 80 16 86 32 C92 48 80 66 50 86 Z"/>'; }, hi:'<ellipse cx="28" cy="29" rx="8" ry="3.2" fill="#fff" opacity=".95" transform="rotate(-40 28 29)"/>', sp:[[40,50,1.3],[58,44,1],[56,60,1.4],[46,66,.9]], star:[68,36] }
+  };
+  function sparkle(x,y){ return '<path d="M'+x+' '+(y-5)+' L'+(x+1)+' '+(y-1)+' L'+(x+5)+' '+y+' L'+(x+1)+' '+(y+1)+' L'+x+' '+(y+5)+' L'+(x-1)+' '+(y+1)+' L'+(x-5)+' '+y+' L'+(x-1)+' '+(y-1)+' Z"/>'; }
+  function gummy(kind, pal, id, delay){
+    var s = SHAPES[kind], c = PAL[pal];
+    var dots = s.sp.map(function(p){ return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+p[2]+'"/>'; }).join("");
+    return '<svg class="gummy" viewBox="0 0 100 100" style="animation-delay:'+delay+'s">' +
+      '<defs><radialGradient id="g'+id+'" gradientUnits="userSpaceOnUse" cx="56" cy="60" r="56"><stop offset="0" stop-color="'+c[0]+'"/><stop offset=".5" stop-color="'+c[1]+'"/><stop offset="1" stop-color="'+c[2]+'"/></radialGradient>' +
+      '<filter id="f'+id+'" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="b"/><feSpecularLighting in="b" surfaceScale="5" specularConstant="1.3" specularExponent="22" lighting-color="#ffffff" result="s"><fePointLight x="28" y="6" z="70"/></feSpecularLighting><feComposite in="s" in2="SourceAlpha" operator="in" result="si"/><feOffset in="SourceAlpha" dx="-3" dy="-4" result="o"/><feGaussianBlur in="o" stdDeviation="4" result="ob"/><feComposite in="SourceAlpha" in2="ob" operator="out" result="rim"/><feFlood flood-color="'+c[3]+'" flood-opacity=".55"/><feComposite in2="rim" operator="in" result="rc"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="rc"/><feMergeNode in="si"/></feMerge></filter></defs>' +
+      '<g opacity=".68"><g filter="url(#f'+id+')" fill="url(#g'+id+')">'+s.body(id)+'</g></g>' + s.hi +
+      '<g class="tw" fill="#fff" style="animation-delay:'+(delay+.4)+'s">'+dots+sparkle(s.star[0],s.star[1])+'</g></svg>';
+  }
+  var shelf = [["bear","lemon"],["star","pink"],["sphere","tomato"],["tri","leaf"],["heart","cobalt"],["bear","leaf"],["star","lemon"],["bear","tomato"]];
+  $("shelf").innerHTML = shelf.map(function(p,i){ return gummy(p[0], p[1], "s"+i, -i*.37); }).join("");
+
+  // ---------- article ----------
+  function host(u){ try { return new URL(u).hostname.replace(/^www\./,""); } catch(e) { return ""; } }
+  function renderList(l){
+    var h = $("list-title"); h.textContent = "";
+    var t = document.createElement("span"); t.textContent = "The best of"; h.appendChild(t);
+    [l.adj, l.kind].forEach(function(w, i){
+      var bob = document.createElement("span"); bob.className = "bob" + (i ? " b2" : "");
+      var g = document.createElement("span"); g.className = "gum"; g.style.backgroundColor = COLORS[colorIdx[i]]; g.textContent = w;
+      bob.appendChild(g); h.appendChild(bob);
+    });
+    $("m-who").textContent = l.who;
+    $("m-count").textContent = l.picks.length + " picks";
+    $("list-note").textContent = l.note;
+    var wrap = $("picks"); wrap.textContent = "";
+    l.picks.forEach(function(p, i){
+      var a = document.createElement("article"); a.className = "pick";
+      var n = document.createElement("div"); n.className = "num"; n.textContent = String(i + 1).padStart(2, "0");
+      var b = document.createElement("div"); b.className = "body";
+      var h2 = document.createElement("h2"); h2.textContent = p.name;
+      var pr = document.createElement("p"); pr.textContent = p.what;
+      var row = document.createElement("div"); row.className = "row";
+      var kv = document.createElement("div"); kv.className = "kv";
+      var lab = document.createElement("span"); lab.className = "lab"; lab.textContent = l.lab;
+      var val = document.createElement("span"); val.className = "val"; val.textContent = p.best;
+      kv.appendChild(lab); kv.appendChild(val); row.appendChild(kv);
+      if (p.url) { var v = document.createElement("a"); v.className = "visit"; v.href = p.url; v.target = "_blank"; v.rel = "noopener"; v.textContent = "Visit " + host(p.url) + " →"; row.appendChild(v); }
+      b.appendChild(h2); b.appendChild(pr); b.appendChild(row);
+      a.appendChild(n); a.appendChild(b); wrap.appendChild(a);
+    });
+  }
+  function route(){
+    var isList = location.hash === "#list";
+    if (isList) renderList(current || LISTS[rand(LISTS.length)]);
+    $("view-list").hidden = !isList;
+    $("view-spin").hidden = isList;
+    window.scrollTo(0,0);
+    if (!isList) reels.forEach(function(r){ setWidth(r, r.cur); });
+  }
+  window.addEventListener("hashchange", route);
+  $("respin").addEventListener("click", function(){ setTimeout(spin, 150); });
+  route();
+})();
+</script>
+</body>
+</html>
